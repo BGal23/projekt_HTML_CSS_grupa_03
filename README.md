@@ -1,6 +1,6 @@
-# parcel-project-template
+Link do naszej pracy: https://bgal23.github.io/projekt_HTML_CSS_grupa_03/
 
-srawdzam czy repo dobrze dodane
+# parcel-project-template
 
 ## Zalezności
 

@@ -5,7 +5,7 @@
   "homepage": "https://bgal23.github.io/projekt_HTML_CSS_grupa_03/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url projekt_HTML_CSS_grupa_03"
+    "build": "parcel build src/*.html --public-url /projekt_HTML_CSS_grupa_03/"
   },
   "repository": {
     "type": "git",

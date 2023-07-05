@@ -3,13 +3,20 @@
 @forward './../components/buttons';
 @forward './../components/cards';
 @forward './../components/contact';
-@forward './../components/forms';
 @forward './../components/hero';
 @forward './../components/icons';
 @forward './../components/logo';
 @forward './../components/modal';
-@forward './../components/navigation';
 @forward './../components/newsletter';
 @forward './../components/products-modal';
 @forward './../components/products';
 @forward './../components/social-media';
+
+
+
+
+/* 3. Components — these are styles for “mini” layouts, 
+ *    such as buttons, form styles, profile pictures, 
+ *    cards, etc. that can be used across the site.
+ *
+ */

@@ -1,0 +1,39 @@
+body {
+  color: #131313;
+  background-color: #aec6a5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+address {
+  font-style: inherit;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

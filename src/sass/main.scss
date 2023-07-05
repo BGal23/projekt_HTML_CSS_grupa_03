@@ -4,9 +4,6 @@
 // Style dla pliku z przykładem HTML fragmentu
 //@import './example';
 
-
-.container {
-    max-width: calc(100vw - 2rem);
-    margin: 0 auto 0;
-    border: 1px solid blue;
-}
+@use "utils/container";
+@use "utils/flex";
+@use "utils/index";

@@ -1,0 +1,21 @@
+.social {
+  &__list {
+    margin: 0;
+    padding: 16px 32px 25px;
+  }
+  &__item {
+    display: inline-block;
+    margin: 0;
+  }
+  &__link {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  &__link:hover {
+    --color-icon-select: #2196f3;
+    --color-icon: #fff;
+  }
+}

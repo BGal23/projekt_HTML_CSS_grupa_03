@@ -1,0 +1,18 @@
+// @use './../abstracts' as *;
+
+:root {
+  --color-text-primary: #2196f3;
+  --color-text-secondary: #757575;
+  --bgcolor-primary: #2f303a;
+  --bgcolor-select: #2196f3;
+  --font-text-primary: 'Roboto', sans-serif;
+  --font-text-secondary: 'Raleway', sans-serif;
+
+  // font size - the typographic scale
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
+  --fs-300: 2.25rem;
+  --fs-400: 2.75rem;
+  --fs-small: 0.875rem;
+
+}

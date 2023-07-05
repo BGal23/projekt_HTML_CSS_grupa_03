@@ -1,0 +1,32 @@
+// @use './../abstracts' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  
+  cursor: pointer;
+}
+body {
+  font-family: var(--font-text-primary);
+  background-color: var(--bgcolor-light);
+  line-height: 1.1875;
+}
+
+section {
+  padding: 0;
+}

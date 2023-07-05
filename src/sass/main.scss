@@ -2,7 +2,8 @@
 // Wszystkie partials podłączamy tutaj.
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+
 @use 'base/root';
 @use 'base/reset';
 @use 'utils';
@@ -10,5 +11,4 @@
 @use 'layout/header';
 @use 'components';
 @use 'layout/footer';
-
 

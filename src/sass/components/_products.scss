@@ -1,0 +1,30 @@
+.products{
+    background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+    background-position: cover;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__space{
+        display: block;
+    }
+    &__ice{
+        background-color:$first-product-card-color;
+    }
+    &__coffee{
+        background-color:$second-product-card-color;
+    }
+    &__milkshake{
+        background-color:$third-product-card-color;
+    }
+    &__title{
+        color: $primary-text-color;
+
+    }
+    &__text{
+        color: $primary-text-color;
+    }
+
+}

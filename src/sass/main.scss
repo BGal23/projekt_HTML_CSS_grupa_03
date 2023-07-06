@@ -4,11 +4,10 @@
 // Style dla pliku z przykładem HTML fragmentu
 
 
-@use 'base/root';
-@use 'base/reset';
+@use 'base';
 @use 'utils';
-@use 'base/typography';
-@use 'layout/header';
+@use 'abstracts';
 @use 'components';
-@use 'layout/footer';
+@use 'layout';
+@use 'pages';
 

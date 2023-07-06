@@ -1,0 +1,281 @@
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+$primary-fonts: "Montserrat", sans-serif;
+
+$title-fonts: "Seymour One", sans-serif;
+
+$direction-fonts: "DM Sans", sans-serif;
+
+
+
+$first-font-weight: 400;
+$second-font-weight: 500;
+$third-font-weight: 600;
+$fourth-font-weight: 700;
+$fifth-font-weight: 800;
+$sixth-font-weight: 900;
+
+$f-size-1: 10px;
+$f-size-2: 12px;
+$f-size-3: 14px;
+$f-size-4: 16px;
+$f-size-5: 18px;
+$f-size-6: 20px;
+$f-size-7: 26px;
+$f-size-8: 28px;
+$f-size-9: 30px;
+$f-size-10: 32px;
+$f-size-11: 36px;
+$f-size-12: 38px;
+$f-size-13: 48px;
+$f-size-14: 58px;
+$f-size-15: 34px;
+$f-size-16: 8px;
+$f-size-17: 22px;
+$f-size-18: 46px;
+
+@mixin font-face-1 {
+    font-family: $direction-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-2;
+}
+
+@mixin font-face-2 {
+    font-family: $direction-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-3;
+}
+
+
+@mixin font-face-3 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-4;
+}
+
+@mixin font-face-4 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-6;
+}
+
+@mixin font-face-5 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-7;
+}
+
+@mixin font-face-6 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-9;
+}
+
+@mixin font-face-7 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-15;
+}
+
+@mixin font-face-8 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-11;
+}
+
+@mixin font-face-9 {
+    font-family: $title-fonts;
+    font-weight: $first-font-weight;
+    font-size: f-size-12;
+}
+
+
+@mixin font-face-10 {
+    font-family: $primary-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-1;
+}
+
+@mixin font-face-11 {
+    font-family: $primary-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-2;
+}
+
+@mixin font-face-12 {
+    font-family: $primary-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-3;
+}
+
+@mixin font-face-13 {
+    font-family: $primary-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-16;
+}
+
+@mixin font-face-14 {
+    font-family: $primary-fonts;
+    font-weight: $first-font-weight;
+    font-size: $f-size-9;
+}
+
+@mixin font-face-15 {
+    font-family: $primary-fonts;
+    font-weight: $second-font-weight;
+    font-size: $f-size-1;
+}
+
+@mixin font-face-16 {
+    font-family: $primary-fonts;
+    font-weight: $second-font-weight;
+    font-size: $f-size-2;
+}
+
+@mixin font-face-17 {
+    font-family: $primary-fonts;
+    font-weight: $second-font-weight;
+    font-size: $f-size-3;
+}
+
+@mixin font-face-18 {
+    font-family: $primary-fonts;
+    font-weight: $second-font-weight;
+    font-size: $f-size-4;
+}
+
+@mixin font-face-19 {
+    font-family: $primary-fonts;
+    font-weight: $second-font-weight;
+    font-size: $f-size-6;
+}
+
+@mixin font-face-20 {
+    font-family: $primary-fonts;
+    font-weight: $third-font-weight;
+    font-size: $f-size-2;
+}
+
+@mixin font-face-21 {
+    font-family: $primary-fonts;
+    font-weight: $third-font-weight;
+    font-size: $f-size-3;
+}
+
+@mixin font-face-22 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-2;
+}
+
+@mixin font-face-23 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-3;
+}
+
+@mixin font-face-24 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-4;
+}
+
+@mixin font-face-25 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-5;
+}
+
+@mixin font-face-26 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-6;
+}
+
+@mixin font-face-27 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-17;
+}
+
+@mixin font-face-28 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-7;
+}
+
+@mixin font-face-29 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-9;
+}
+
+@mixin font-face-30 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-10;
+}
+
+@mixin font-face-31 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-15;
+}
+
+@mixin font-face-32 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-11;
+}
+
+@mixin font-face-33 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-13;
+}
+
+@mixin font-face-34 {
+    font-family: $primary-fonts;
+    font-weight: $fourth-font-weight;
+    font-size: $f-size-14;
+}
+
+@mixin font-face-35 {
+    font-family: $primary-fonts;
+    font-weight: $fifth-font-weight;
+    font-size: $f-size-5;
+}
+
+@mixin font-face-36 {
+    font-family: $primary-fonts;
+    font-weight: $fifth-font-weight;
+    font-size: $f-size-17;
+}
+
+@mixin font-face-37 {
+    font-family: $primary-fonts;
+    font-weight: $fifth-font-weight;
+    font-size: $f-size-9;
+}
+
+@mixin font-face-38 {
+    font-family: $primary-fonts;
+    font-weight: $sixth-font-weight;
+    font-size: $f-size-8;
+}
+
+@mixin font-face-39 {
+    font-family: $primary-fonts;
+    font-weight: $sixth-font-weight;
+    font-size: $f-size-18;
+}

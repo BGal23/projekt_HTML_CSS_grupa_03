@@ -1,3 +1,48 @@
+body {
+  color: #131313;
+  background-color: #aec6a5;
+  font-family: "Montserrat", sans-serif;
+}
+
+address {
+  font-style: inherit;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,40 +79,6 @@ ol {
 
 .link {
   text-decoration: none;
-}
-
-.container {
-  max-width: calc(100vw - 2rem);
-  margin: 0 auto 0;
-  border: 1px solid red;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .pg-header {
@@ -136,4 +147,60 @@ ol {
   fill: #ffffff;
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 280px;
+    margin: 0 auto 0;
+    border: 1px solid crimson;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 440px;
+    margin: 0 auto 0;
+    border: 1px solid red;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 704px;
+    margin: 0 auto 0;
+    border: 1px solid orangered;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .container {
+    max-width: 1168px;
+    margin: 0 auto 0;
+    border: 1px solid orange;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

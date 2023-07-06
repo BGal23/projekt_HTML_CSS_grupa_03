@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
-    <link
-      rel="stylesheet"
-      href="./sass/main.css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      crossorigin="anonymous"
-    />
-    <!-- (wyrzucone z head-link bo nie działał css) integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" -->
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat at corrupti deserunt
-          accusantium iusto, consequuntur omnis natus voluptatibus odio? Alias eos quibusdam
-          dolores, fuga laudantium mollitia molestiae illo qui hic ullam inventore provident
-          repellat voluptatem asperiores praesentium. Ad ipsum, recusandae id itaque beatae odio
-          rem, quaerat similique possimus veritatis odit.
-        </p>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam sequi
-          doloribus deleniti cum, molestias delectus explicabo minus aut consequatur atque eos porro
-          dignissimos! Atque ipsum quibusdam impedit vitae eveniet accusantium eius, aspernatur
-          ullam, autem eos eaque quae consequuntur vel? Quasi, quaerat harum corrupti quia
-          consectetur porro inventore earum amet fuga doloribus. Dolores doloribus praesentium
-          possimus. Porro architecto tenetur tempore ratione perspiciatis provident? Laudantium
-          debitis pariatur modi, consequuntur ad ab sapiente itaque molestiae, tempore similique
-          distinctio! Officiis eius consequuntur quam ducimus quisquam sed iure consequatur cumque
-          ut qui, amet ipsum vero, enim nostrum, magni est laudantium in voluptatibus magnam facere
-          beatae maxime illo. Excepturi officiis quod autem minus aspernatur, voluptatem recusandae
-          modi corrupti. Placeat qui est odit necessitatibus cumque nostrum ea? Perferendis
-          voluptate magnam quia veniam, libero, distinctio temporibus nam dolores minima, quibusdam
-          illum id eos modi recusandae fugiat facilis porro provident voluptatem cupiditate eum! Quo
-          quod vero deserunt odit dignissimos, eaque adipisci? Fugiat consequatur velit dolor
-          expedita vero, minus minima laudantium corporis doloremque error necessitatibus repellat
-          quis iste cupiditate voluptatum at excepturi! A quam error voluptas quasi, repellendus
-          animi, iste consequuntur commodi officiis assumenda natus. Adipisci eveniet quisquam,
-          veniam blanditiis nulla consectetur quas. Quibusdam rerum dolore dolorem ad eum.
-        </p>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, commodi quisquam?
-          Eaque exercitationem et saepe neque! Officia molestias sit vitae, iusto itaque quis esse
-          eaque harum quod debitis velit unde veritatis corrupti omnis. Illum nesciunt deleniti
-          fugit quos nisi ipsa voluptatem minima illo eius, rem doloribus iure, modi eum beatae!
-        </p>
-      </div>
-    </footer>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony.
-    <include src="./partials/example.html"></include>
-    <h4>Udało sie ogarnąć strone! Wszystko działa, możemy zabierać sie za robote</h4>
-    Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik.
-    <script src="./index.js" type="module"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagłówek strony</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./sass/main.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    crossorigin="anonymous" />
+
+  <!-- (wyrzucone z head-link bo nie działał css) integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" -->
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/header-modal.html"></include>
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/products-modal.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/about-modal.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/contacts-modal.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/backdrop.html"></include>
+  <include src="./partials/swipe-up.html"></include>
+  
+  <!--<script type="module" src="./js/index.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script type="text/javascript" src="//web-ptica.ru/VRV-files/jquery-2.1.3.min.js"></script>-->
+</body>
+
 </html>

@@ -81,6 +81,35 @@ ol {
   text-decoration: none;
 }
 
+.products {
+  background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+  background-position: cover;
+}
+.products__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__space {
+  display: block;
+}
+.products__ice {
+  background-color: #AEC6A5;
+}
+.products__coffee {
+  background-color: #EFD478;
+}
+.products__milkshake {
+  background-color: #D6936D;
+}
+.products__title {
+  color: #131313;
+}
+.products__text {
+  color: #131313;
+}
+
 .section__contact {
   padding: 0 0 60px 0;
 }
@@ -135,6 +164,43 @@ ol {
   margin-top: 8px;
 }
 
+.fill {
+  background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 50px;
+  gap: 20px;
+}
+.customer__foto {
+  display: flex;
+}
+.customer__reviews {
+  display: flex;
+  justify-content: center;
+  background-color: #84A178;
+  width: 280px;
+  height: 256px;
+  border-radius: 10px;
+}
+.customer__reviews p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #FCFCFC;
+}
+.customer__buttons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.customer__buttons ul button {
+  background-color: grey;
+}
+
 .pg-header {
   padding-top: 20px;
   align-items: center;
@@ -162,7 +228,7 @@ ol {
   padding: 0;
   margin-left: auto;
   margin-right: 32px;
-  background-color: green;
+  background-color: #84A178;
 }
 @media (max-width: 480px) {
   .pg-header__menu-button {
@@ -198,9 +264,129 @@ ol {
 }
 
 .modal__cross.pg-header__modal-cros {
-  fill: #ffffff;
+  fill: #FFFFFF;
   width: 20px;
   height: 20px;
+}
+
+.pg-header-tab-desk__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: #F8D24E;
+  width: 152px;
+  height: 42px;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .pg-header-tab-desk__button {
+    display: none;
+  }
+}
+.pg-header-tab-desk__in-menu {
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .pg-header-tab-desk__in-menu {
+    display: none;
+  }
+}
+.pg-header-tab-desk__button:hover {
+  background: #0A8817;
+}
+.pg-header-tab-desk__button:focus {
+  background: #0A8817;
+  color: #FFFFFF;
+}
+
+.pg-header__icon-arrow {
+  fill: currentColor;
+  margin-left: 5px;
+}
+
+.pg-header-nav__link {
+  color: #FCFCFC;
+}
+.pg-header-nav__link:hover {
+  color: #F8D24E;
+}
+.pg-header-nav__link:focus {
+  color: #F8D24E;
+}
+
+.pg-header__mobile-menu.modal {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.23;
+  background-color: #84A178;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu.modal {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+
+.pg-header__mobile-menu.modal.active {
+  transform: translateX(0);
+}
+
+.pg-header__mobile-menu-list {
+  padding-top: 76px;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu-list {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 480px) {
+  .pg-header__mobile-menu-list {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+
+.pg-header__mobile-menu-item {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pg-header__mobile-menu-item + .pg-header__mobile-menu-item {
+  margin-top: 40px;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu-item + .pg-header__mobile-menu-item {
+    margin-top: 32px;
+  }
+}
+
+.pg-header__mobile-menu-link {
+  color: #FFFFFF;
+}
+.pg-header__mobile-menu-link:hover, .pg-header__mobile-menu-link:focus {
+  color: #131313;
 }
 
 @media screen and (min-width: 320px) {

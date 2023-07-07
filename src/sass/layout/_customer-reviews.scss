@@ -1,0 +1,45 @@
+.fill {
+        background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+}
+
+.customer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 50px;
+        gap: 20px;
+
+    &__foto {
+        display: flex;
+
+    }
+    &__reviews {
+        display: flex;
+        justify-content: center;
+        background-color: $primary-background-color;
+        width: 280px;
+        height: 256px;
+        border-radius: 10px;
+
+        & p {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            color: $secondary-background-color;
+            
+        }
+    }
+
+    &__buttons {
+        
+        & ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+            & button {
+                background-color: grey;
+            }
+        }
+    }
+}

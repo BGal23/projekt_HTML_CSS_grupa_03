@@ -1,6 +1,20 @@
 .products{
     background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
     background-position: cover;
+    &__main-text{
+        font-size: $fs18;
+        font-family:$montserrat-fonts ;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__main-title{
+        font-family: $seymour-fonts;
+        font-size: $fs30;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
     &__flex{
         display: flex;
         flex-direction: column;
@@ -8,23 +22,61 @@
         align-items: center;
     }
     &__space{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
     }
     &__ice{
+        position: relative;
         background-color:$first-product-card-color;
+        max-width: 320px;
+        height: 428px;
+        border-radius: 24px;
     }
     &__coffee{
+        position: relative;
         background-color:$second-product-card-color;
+        max-width: 320px;
+        height: 428px;
+        border-radius: 24px;
     }
     &__milkshake{
+        position: relative;
         background-color:$third-product-card-color;
+        max-width: 320px;
+        height: 428px;
+        border-radius: 24px;
+        padding-inline: 60px;
+
     }
     &__title{
         color: $primary-text-color;
+        padding-top: 126px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        font-weight: 700;
+        font-size:$fs20 ;
+        font-family:$montserrat-fonts ;
 
     }
     &__text{
         color: $primary-text-color;
+        text-align: center;
+        font-family: $montserrat-fonts ;
+        font-weight: 400 ;
+        font-size: $fs14;
+        letter-spacing: 0.56px; 
+        line-height: 1.71;
+        padding-block: 40px 93px;
+
+    }
+    &__icons{
+        position: absolute;
+        bottom: 16xp;
+        margin: 0 auto;
     }
 
 }

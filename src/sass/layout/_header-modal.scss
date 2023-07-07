@@ -1,21 +1,29 @@
-.header-buy-modal {
-  padding: 28px 28px 29px 28px;
-  background-color: $secondary-background-color;
+.icon-close {
+  width: 24px;
+  height: 20px;
 
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.header-buy-modal {
+  background-color: $secondary-background-color;
+  padding: 28px;
   @include tablet {
     padding: 32px 54px;
   }
 
   &__title {
     margin-bottom: 83px;
-    text-align: center;
     color: $primary-text-color;
+    text-align: center;
     font-family: $seymour-fonts;
     @include font(16px, 400, null, 1.5);
 
     @include tablet {
       @include font(20px, null, null, 1.4);
-
       margin-bottom: 103px;
     }
   }
@@ -48,7 +56,6 @@
     color: $primary-text-color;
     font-family: $montserrat-fonts;
     @include font(16px, 700, null, 1.25);
-    font-style: bold;
     text-transform: uppercase;
     text-align: center;
 
@@ -80,18 +87,8 @@
   max-height: 991px;
 
   @include tablet {
-    max-width: 568px;
     max-height: 644px;
-  }
-}
-
-.icon-close {
-  width: 24px;
-  height: 20px;
-
-  @include tablet {
-    width: 24px;
-    height: 24px;
+    max-width: 568px;
   }
 }
 
@@ -157,31 +154,44 @@
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
-.header-buy-modal__form {
-  color: $primary-text-color;
-}
+.header-buy-modal {
+  &__form {
+    color: $primary-text-color;
+  }
 
-.header-buy-modal__input {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  height: 32px;
-  margin-bottom: 12px;
-  padding: 8px 12px;
-  outline: none;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: solid 1px $primary-background-color;
-  border-radius: 10px;
-  @include font(12px, null, null, 1.4);
-  text-align: left;
-  color: $primary-text-color;
+  &__input {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    outline: none;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: solid 1px $primary-background-color;
+    border-radius: 10px;
+    @include font(12px, null, null, 1.4);
+    text-align: left;
+    color: $primary-text-color;
 
-  @include tablet {
-    width: 368px;
-    height: 42px;
-    padding: 11px 16px;
-    margin-bottom: 16px;
+    @include tablet {
+      width: 368px;
+      height: 42px;
+      padding: 11px 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__comment {
+    resize: none;
+    height: 65px;
+    margin-bottom: 26px;
+
+    @include tablet {
+      height: 84px;
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -190,18 +200,7 @@
 }
 
 .header-buy-modal__input:not(:placeholder-shown):invalid {
-  border-color: purple;
-}
-
-.header-buy-modal__comment {
-  resize: none;
-  height: 65px;
-  margin-bottom: 26px;
-
-  @include tablet {
-    height: 84px;
-    margin-bottom: 32px;
-  }
+  border-color: red;
 }
 
 .submit-btn {

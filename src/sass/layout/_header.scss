@@ -122,7 +122,7 @@
   font-size: 48px;
   line-height: 1.23;
   background-color: $primary-background-color;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   top: 0;
   left: 0;
   min-width: 100%;
@@ -141,7 +141,7 @@
 }
 
 .pg-header__mobile-menu.modal.active {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .pg-header__mobile-menu-list {

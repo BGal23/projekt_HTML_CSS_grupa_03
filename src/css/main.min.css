@@ -1,1 +1,656 @@
-*{margin:0;padding:0}*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,h4,h5,h6,p{margin:0}img{display:block;max-width:100%;height:auto}ul,ol{list-style:none;padding-left:0;margin:0}.link{text-decoration:none}.container{max-width:calc(100vw - 2rem);margin:0 auto 0;border:1px solid blue}/*# sourceMappingURL=main.min.css.map */
+body {
+  color: #131313;
+  background-color: #AEC6A5;
+  font-family: "$montserrat-fonts", "$seymour-fonts";
+}
+body ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+/* DESCRIPTION
+ *
+ * Andy Bell's Reset 
+ *
+ * https://piccalil.li/blog/a-modern-css-reset
+ * https://andy-bell.co.uk/a-modern-css-reset
+ * https://github.com/Andy-set-studio/modern-css-reset
+ *
+ * Note: please do not modify this file without 
+ *       consulting.
+ *
+ *
+ * Code scope: entire project
+ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* input, */
+/* button, */
+/* textarea, */
+/* select { */
+/*   font: inherit; */
+/* } */
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.btn-product {
+  width: 6.7rem;
+  height: 2.375em;
+  flex-shrink: 0;
+  border: 2px solid #f8d24e;
+  border-radius: 0.5rem;
+}
+.btn-product:hover {
+  border-color: #0A8817;
+}
+.btn-product__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.products {
+  background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+  background-position: cover;
+}
+.products__main-text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.products__main-title {
+  font-family: "Seymour One";
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.products__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.products__ice {
+  position: relative;
+  background-color: #AEC6A5;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
+}
+.products__coffee {
+  position: relative;
+  background-color: #EFD478;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
+}
+.products__milkshake {
+  position: relative;
+  background-color: #D6936D;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
+  padding-inline: 60px;
+}
+.products__title {
+  color: #131313;
+  padding-top: 126px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+.products__text {
+  color: #131313;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 1.71;
+  padding-block: 40px 93px;
+}
+.products__icons {
+  position: absolute;
+  bottom: 16xp;
+  margin: 0 auto;
+}
+
+.section__contact {
+  padding: 0 0 60px 0;
+}
+
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact__item {
+  padding: 40px 32px 24px 32px;
+  width: 280px;
+  background-color: #FCFCFC;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+.contact__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-component__item {
+  margin-bottom: 24px;
+}
+.contact-component__item:nth-child(2) {
+  padding: 24px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contact-component__text {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+.contact-component__text--category {
+  line-height: 120%;
+  display: inline-block;
+  padding: 4px 22px;
+  background-color: #F8D24E;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.contact-component__text--adress {
+  color: #d6936d;
+  line-height: 1.83;
+  padding-top: 8px;
+}
+.contact-component__text--time {
+  padding-bottom: 8px;
+  color: #ABABAB;
+}
+
+.contact-component__tel,
+.contact-component__email {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  gap: 6px;
+}
+
+.contact-btn__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-btn__item {
+  width: 196px;
+  height: 42px;
+}
+.contact-btn__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-btn__btn {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #F8D24E;
+}
+.contact-btn__btn--franchise {
+  background-color: transparent;
+  border: 2px solid #F8D24E;
+}
+
+.fill {
+  background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 50px;
+  gap: 20px;
+}
+.customer__icecrem {
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
+.customer__foto {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.customer__reviews {
+  display: flex;
+  justify-content: center;
+  background-color: #84A178;
+  width: 280px;
+  height: 256px;
+  border-radius: 10px;
+}
+.customer__reviews p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30.6px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #FCFCFC;
+  margin: 30px;
+}
+.customer__name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 37.2px;
+}
+.customer__buttons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.customer__buttons ul button {
+  width: 14px;
+  height: 14px;
+  background-color: #D9D9D9;
+}
+
+.pg-header {
+  padding-top: 20px;
+  align-items: center;
+}
+.pg-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pg-header__nav {
+  display: flex;
+}
+@media (max-width: 1199px) {
+  .pg-header__nav {
+    display: none;
+  }
+}
+.pg-header__menu-button {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 32px;
+  background-color: #84A178;
+}
+@media (max-width: 480px) {
+  .pg-header__menu-button {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .pg-header__menu-button {
+    display: none;
+  }
+}
+
+.pg-header__logo-mobile.pg-header__ise-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pg-header-nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.pg-header-nav__link {
+  display: inline-block;
+}
+.pg-header-nav__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.modal__cross.pg-header__modal-cros {
+  fill: #FFFFFF;
+  width: 20px;
+  height: 20px;
+}
+
+.pg-header-tab-desk__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: #F8D24E;
+  width: 152px;
+  height: 42px;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .pg-header-tab-desk__button {
+    display: none;
+  }
+}
+.pg-header-tab-desk__in-menu {
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .pg-header-tab-desk__in-menu {
+    display: none;
+  }
+}
+.pg-header-tab-desk__button:hover {
+  background: #0A8817;
+}
+.pg-header-tab-desk__button:focus {
+  background: #0A8817;
+  color: #FFFFFF;
+}
+
+.pg-header__icon-arrow {
+  fill: currentColor;
+  margin-left: 5px;
+}
+
+.pg-header-nav__link {
+  color: #FCFCFC;
+}
+.pg-header-nav__link:hover {
+  color: #F8D24E;
+}
+.pg-header-nav__link:focus {
+  color: #F8D24E;
+}
+
+.pg-header__mobile-menu.modal {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.23;
+  background-color: #84A178;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu.modal {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+
+.pg-header__mobile-menu.modal.active {
+  transform: translateX(0);
+}
+
+.pg-header__mobile-menu-list {
+  padding-top: 76px;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu-list {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 480px) {
+  .pg-header__mobile-menu-list {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+
+.pg-header__mobile-menu-item {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pg-header__mobile-menu-item + .pg-header__mobile-menu-item {
+  margin-top: 40px;
+}
+@media (max-width: 480px) {
+  .pg-header__mobile-menu-item + .pg-header__mobile-menu-item {
+    margin-top: 32px;
+  }
+}
+
+.pg-header__mobile-menu-link {
+  color: #FFFFFF;
+}
+.pg-header__mobile-menu-link:hover, .pg-header__mobile-menu-link:focus {
+  color: #131313;
+}
+
+/*  HERO
+ *
+ */
+/*  12px = 0.75rem  */
+/*  14px = 0.875rem  */
+/*  16px = 1rem  */
+/*  18px = 1.125rem  */
+/*  20px = 1.25rem  */
+/*  22px = 1.375rem  */
+/*  26px = 1.625rem  */
+/*  30px = 1.875rem  */
+/*  34px = 2.125rem  */
+/*  36px = 2.25rem  */
+/*  48px = 3rem  */
+/*  58px = 3.625rem  */
+.hero .container {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 2.06em; /* 20px */
+}
+.hero__bg {
+  flex-shrink: 0;
+  background-color: #84A178;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.hero__title {
+  display: flex;
+  width: 15.4375rem;
+  height: 6.0625rem;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.hero__title-text {
+  color: #fcfcfc;
+  font-family: Seymour One;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  font-weight: 400;
+  letter-spacing: 0.065rem;
+  line-height: normal;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 280px;
+    margin: 0 auto 0;
+    border: 1px solid crimson;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 440px;
+    margin: 0 auto 0;
+    border: 1px solid red;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 704px;
+    margin: 0 auto 0;
+    border: 1px solid orangered;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .container {
+    max-width: 1168px;
+    margin: 0 auto 0;
+    padding: 0;
+    border: 1px solid orange;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=main.min.css.map */

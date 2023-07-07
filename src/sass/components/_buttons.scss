@@ -1,0 +1,23 @@
+.btn-product {
+  width: 6.7rem;
+  height: 2.375em;
+  flex-shrink: 0;
+  border: 2px solid #f8d24e;
+  border-radius: 0.5rem;
+  &:hover {
+    border-color: #0A8817;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

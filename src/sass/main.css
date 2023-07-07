@@ -1,25 +1,3 @@
-body {
-  color: #131313;
-  background-color: #AEC6A5;
-  font-family: "$montserrat-fonts", "$seymour-fonts";
-}
-body ul {
-  list-style-type: none;
-}
-
-address {
-  font-style: inherit;
-}
-
-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  font-size: 14px;
-  font-family: inherit;
-}
-
 /* DESCRIPTION
  *
  * Andy Bell's Reset 
@@ -106,9 +84,246 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  color: #131313;
+  background-color: #AEC6A5;
+  font-family: "Montserrat", "Seymour One";
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+body ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  border-radius: 10px;
+  padding: 12px 34px;
+  display: inline-flex;
+  align-items: center;
+  color: #000000;
+  background-color: #F8D24E;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button:focus {
+  color: #FCFCFC;
+}
+.button__arrow {
+  margin-left: 4px;
+  fill: currentColor;
+}
+.button:hover, .button:focus {
+  background-color: #0A8817;
+}
+.button:focus {
+  filter: drop-shadow(0 0 0 #FFFFFF);
+}
+.button:disabled {
+  background-color: #ABABAB;
+}
+.button--bg-transperent {
+  background-color: transparent;
+  border: 2px solid #F8D24E;
+}
+.button--bg-transperent:hover {
+  background-color: transparent;
+  border-color: #0A8817;
+}
+.button--bg-transperent:focus {
+  background-color: transparent;
+  color: #FCFCFC;
+  border-color: #0A8817;
+}
+.button--bg-transperent:disabled {
+  background-color: transparent;
+  border-color: #ABABAB;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 280px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #FCFCFC;
+  transition: 0.3s all;
+  padding: 28px;
+  border: 2px solid #F8D24E;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 568px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 32px 60px;
+  }
+}
+.modal__title {
+  font-family: "Seymour One";
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+.modal__frame {
+  background-color: #000000;
+  border-radius: 10px;
+  max-width: 224px;
+  border: 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .modal__frame {
+    max-width: 448px;
+  }
+}
+.modal__text {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .modal__text {
+    font-size: 16px;
+    font-weight: nill;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  overflow-y: scroll;
+}
+
+.modal__cross {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__cross:hover {
+  fill: #84A178;
+}
+@media screen and (min-width: 768px) {
+  .modal__cross {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .products {
   background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
   background-position: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/Mobile/mobile-mainbackgr@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    background-image: url(../images/Tablet/tablet-mainbackgr@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/Tablet/tablet-mainbackgr@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url(../images/Desktop/desktop-mainbackgr@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/Desktop/desktop-mainbackgr@2x.jpg);
+  }
 }
 .products__main-text {
   font-size: 18px;
@@ -116,6 +331,17 @@ svg {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .products__main-text {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__main-text {
+    font-size: 30px;
+  }
 }
 .products__main-title {
   font-family: "Seymour One";
@@ -123,6 +349,19 @@ svg {
   font-weight: 400;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-block: 12px 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .products__main-title {
+    margin-block: 12px 80px;
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__main-title {
+    font-size: 36px;
+  }
 }
 .products__flex {
   display: flex;
@@ -130,34 +369,92 @@ svg {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .products__flex {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__flex {
+    gap: 29px;
+  }
+}
 .products__space {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  margin: 0;
 }
 .products__ice {
   position: relative;
+  top: -150px;
   background-color: #AEC6A5;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
+  padding-inline: 60px;
+}
+@media screen and (min-width: 768px) {
+  .products__ice {
+    padding-inline: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__ice {
+    padding-inline: 64px;
+    height: 536px;
+    max-width: 370px;
+    position: relative;
+    top: -200px;
+  }
 }
 .products__coffee {
   position: relative;
+  top: -150px;
   background-color: #EFD478;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
+  padding-inline: 60px;
+}
+@media screen and (min-width: 768px) {
+  .products__coffee {
+    padding-inline: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__coffee {
+    padding-inline: 64px;
+    height: 536px;
+    max-width: 370px;
+    position: relative;
+    top: -200px;
+  }
 }
 .products__milkshake {
   position: relative;
+  top: -150px;
   background-color: #D6936D;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
   padding-inline: 60px;
+}
+@media screen and (min-width: 768px) {
+  .products__milkshake {
+    padding-inline: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__milkshake {
+    position: relative;
+    top: -200px;
+    padding-inline: 64px;
+    height: 536px;
+    max-width: 370px;
+  }
 }
 .products__title {
   color: #131313;
@@ -169,6 +466,18 @@ svg {
   font-size: 20px;
   font-family: "Montserrat";
 }
+@media screen and (min-width: 768px) {
+  .products__title {
+    padding-top: 108px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__title {
+    padding-top: 168px;
+    font-size: 30px;
+  }
+}
 .products__text {
   color: #131313;
   text-align: center;
@@ -179,10 +488,66 @@ svg {
   line-height: 1.71;
   padding-block: 40px 93px;
 }
+@media screen and (min-width: 768px) {
+  .products__text {
+    padding-block: 40px 78px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__text {
+    padding-block: 66px 126px;
+  }
+}
 .products__icons {
   position: absolute;
-  bottom: 16xp;
-  margin: 0 auto;
+  left: 44%;
+  bottom: 16px;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products__icons:hover {
+  transform: scale(1.8);
+}
+@media screen and (min-width: 480px) {
+  .products__icons {
+    left: 140px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__icons {
+    bottom: 12px;
+    left: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__icons {
+    bottom: 60px;
+    left: 165px;
+  }
+}
+.products__img {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  z-index: 998;
+}
+.products__img__one {
+  position: inherit;
+  z-index: 999;
+  box-shadow: 0px 16px 0px 0px rgba(156, 190, 143, 0.7);
+  border-radius: 50%;
+}
+.products__img__two {
+  position: inherit;
+  z-index: 999;
+  box-shadow: 0px 16px 0px 0px rgba(248, 210, 78, 0.7);
+  border-radius: 50%;
+}
+.products__img__three {
+  position: inherit;
+  z-index: 999;
+  box-shadow: 0px 16px 0px 0px rgba(213, 117, 63, 0.7);
+  border-radius: 50%;
 }
 
 .section__contact {
@@ -294,13 +659,14 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0 50px;
+  margin: -50px 0 50px;
   gap: 20px;
 }
 .customer__icecrem {
   position: relative;
-  bottom: 50px;
-  width: 100%;
+  justify-content: center;
+  bottom: 30px;
+  max-width: 1013px;
 }
 .customer__foto {
   border-radius: 50%;
@@ -310,9 +676,13 @@ svg {
   display: flex;
   justify-content: center;
   background-color: #84A178;
-  width: 280px;
-  height: 256px;
+  max-width: 280px;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .customer__reviews {
+    max-width: 1013px;
+  }
 }
 .customer__reviews p {
   font-size: 12px;
@@ -324,6 +694,22 @@ svg {
   align-items: center;
   color: #FCFCFC;
   margin: 30px;
+}
+@media screen and (min-width: 768px) {
+  .customer__reviews p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer__reviews p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 26.4px;
+  }
 }
 .customer__name {
   font-size: 20px;
@@ -369,7 +755,8 @@ svg {
   padding: 0;
   margin-left: auto;
   margin-right: 32px;
-  background-color: #84A178;
+  background-color: transparent;
+  fill: #FFFFFF;
 }
 @media (max-width: 480px) {
   .pg-header__menu-button {
@@ -532,26 +919,26 @@ svg {
 
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 280px;
+    max-width: calc(100vw - 40px);
     margin: 0 auto 0;
     border: 1px solid crimson;
   }
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 440px;
+    max-width: calc(100vw - 40px);
     margin: 0 auto 0;
     border: 1px solid red;
   }
 }
 @media screen and (min-width: 767px) {
   .container {
-    max-width: 704px;
+    max-width: calc(100vw - 63px);
     margin: 0 auto 0;
     border: 1px solid orangered;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1168px;
     margin: 0 auto 0;

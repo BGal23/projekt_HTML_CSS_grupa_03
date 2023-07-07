@@ -7,8 +7,8 @@
     padding-bottom: 39px;
   }
   .about__label {
-    @include font-face-25
-    line-height: 1, 17;
+    @include font-face-25;
+    line-height: 1.17em;
         text-align: center;
     text-transform: uppercase;
     color: $secondary-background-color;

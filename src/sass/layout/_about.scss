@@ -9,13 +9,14 @@
     padding-bottom: 39px;
   }
   .about__label {
-    @include font-face-25;
+    
     line-height: 1.17em;
         text-align: center;
     text-transform: uppercase;
     color: red;
     padding-top: 125px;
     margin-bottom: 15px;
+    @include font-face-25;
   }
   .about__secondary-title {
     // font-family: 'Titan One';

@@ -1,70 +1,52 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../utils/vars';
 
 .about {
- background-color: $primary-background-color;
-       background-repeat: no-repeat;
+background-color: $primary-background-color;
+background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 91%;
     padding-bottom: 39px;
-  }
+    align-items: center;
+    // margin: 0 15px 0 15px;
+     
   &__label {
     line-height: 1.17em;
     text-align: center;
     text-transform: uppercase;
-    color: red;
-    padding-top: 125px;
-    margin-bottom: 15px;
+    color: $secondary-background-color;
+    // padding-top: 125px;
+    // margin-bottom: 15px;
     @include font-face-25;
   }
-  &__main-title {
-    // font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1, 15;
+    &__img {
+display: block;
+margin: auto;
+max-width: 91%;
+height: auto;
+position: inherit;
+z-index: 1;
+border-radius: 50%;
+box-shadow:  rgba(248, 210, 78, 0.7) 0px -25px 0px 0px;
+
+}
+    &__main-title {
+    @include font-face-25;
+    line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
-    color: getColor('button-color');
+    // color: getColor('button-color');
     margin: auto;
     margin-bottom: 26px;
-  }
-  // &__pic-sec { 
-  // -webkit-box-flex: 0;
-  //       -ms-flex: 0 0 100%;
-  //           flex: 0 0 100%;
-  //   max-width: 100%;
-  // }
-  &__picture {
-    display: block;
-    width: 100%;
-    height: auto;
-    
-  }
-  // &__first-paragraph {
-  //   // font-family: 'DM Sans';
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   font-size: 12px;
-  //   line-height: 1, 6;
-  //   color: getColor('text');
-  // }
-  // .about__secondary-paragraph {
-  //   // font-family: 'DM Sans';
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   font-size: 12px;
-  //   line-height: 1, 6;
-  //   // color: getColor('information');
-  //   margin-top: 47px;
-  // }
-  .about__button {
+}
+    &__description {
+        color: $secondary-background-color;
+    }
+    &__button {
     width: 176px;
     height: 44px;
-    // background: getColor('basic-color');
+    background-color: $button-background-color;
     border-radius: 22px;
     border: none;
-    // color: getColor('button-color');
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -72,142 +54,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
-  -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 13.62px; 
-  -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 0;
     margin: auto;
     margin-top: 17px;
-    // &:hover {
-    //   background-color: getColor('button-hover');
-    // }
-  }
-//   @media screen and (max-width: 767px) {
-//     .about__pic-sec {
-//       margin-left: 20px;
-//       margin-right: 20px;
-//       margin-bottom: 46px;
-//     }
-    .about__first-paragraph,
-    .about__secondary-paragraph {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
   
-//   @media screen and (min-width: 768px) {
-//     .about {
-//       background-image: none;
-//     }
-//     .about__primary-title {
-//       font-size: 26px;
-//       line-height: 1, 5;
-//       padding-top: 130px;
-//       margin-bottom: 16px;
-//     }
-//     .about__secondary-title {
-//       font-size: 48px;
-//       line-height: 1, 2;
-//       width: 429px;
-//     }
-//     .about__pic-sec {
-//   -webkit-box-flex: 0;
-//           -ms-flex: 0 0 50%;
-//               flex: 0 0 50%;
-//       max-width: 50%;
-//     }
-//     .about__first-paragraph {
-//       font-size: 14px;
-//       line-height: 1, 8;
-//       width: 340px;
-//       margin-top: 100px;
-//     }
-//     .about__secondary-paragraph {
-//       font-size: 14px;
-//       line-height: 1, 8;
-//       width: 340px;
-//       margin-top: 49px;
-//     }
-//     .about__two-sections {
-//       display: -webkit-box;
-//       display: -ms-flexbox;
-//       display: flex;   
-//   -webkit-box-align: center;
-//           -ms-flex-align: center;
-//               align-items: center;
-//       -webkit-box-pack: center;
-//           -ms-flex-pack: center;
-//               justify-content: center;
-//       gap: 17px;
-//     }  
-//   .about__space {
-//       display: none;
-//     }
-//     .about__text-sec {
-//       background-image: none;
-//     }
-//     .about__button {
-//       margin-top: 62px;
-//       margin-left: 0px;
-//     }
-//   }
-//   @media screen and (min-width: 1280px) {
-//     .about {
-//       background-image: url(../images/desktop/advantagesbg.webp);
-//       background-position: 0% 110%;
-//     }
-//     .about__primary-title {
-//       font-size: 30px;
-//       line-height: 1, 4;
-//       padding-top: 125px;
-//     }
-//     .about__secondary-title {
-//       font-size: 58px;
-//       line-height: 1, 14;
-//       width: 534px;
-//     }
-//     .about__first-paragraph {
-//       font-size: 16px;
-//       width: 463px;
-//       margin-top: 0;
-//     }
-//     .about__secondary-paragraph {
-//       width: 463px;
-//       line-height: 2;
-//       letter-spacing: 0.04em;
-//       margin-top: 35px;
-//     }
-//     .about__two-sections {
-//       gap: 70px;
-//     }
-//     .about__pic-sec {
-//       margin-top: 50px;
-//     }
-//     .about__button {
-//       margin-top: 45px;
-//       text-align: start;
-//     }
-//   }
-//   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-//     screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-//     screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
-//     screen and (max-width: 767px) and (min-resolution: 192dpi),
-//     screen and (max-width: 767px) and(-webkit-min-device-pixel-ratio: 2),
-//     screen and (max-width: 767px) and(-o-min-device-pixel-ratio: 2/1),
-//     screen and (max-width: 767px) and(min-resolution: 2dppx) {
-//     .about {
-//       background-image: url(../images/mobile/advantagesbg@2x.webp);
-//     }
-//   }
-//   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-//     screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-//     screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1),
-//     screen and (min-width: 1280px) and (min-resolution: 192dpi),
-//     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-//     .about {
-//       background-image: url(../images/desktop/advantagesbg@2x.webp);
-//     }
-//   }
+    }
+  }

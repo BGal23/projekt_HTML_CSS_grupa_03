@@ -22,7 +22,8 @@
     padding: 0;
     margin-left: auto;
     margin-right: 32px;
-    background-color: $primary-background-color;
+    background-color: transparent;
+    fill: $tablet-header-description-color;
 
     @media (max-width: 480px) {
       margin-right: 0px;

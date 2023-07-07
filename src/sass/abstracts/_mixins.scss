@@ -1,0 +1,31 @@
+//ROZDZIELCZOŚĆ
+
+@mixin mobile_1  {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+@mixin mobile_2 {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+//CZCIONKI
+
+@mixin font($font-size, $font-weight, $letter-spacing, $line-heigh) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    line-height: $line-heigh;
+}

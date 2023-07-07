@@ -1,13 +1,57 @@
 // Główny plik dla stylów.
 // Wszystkie partials podłączamy tutaj.
 
-// Style dla pliku z przykładem HTML fragmentu
+// NIE ZMIENIAĆ!!! TYLKO ZA POMCĄ @import DOBRZE INPORTUJE ZMIENNE
 
+@import 'base/reset';
 
-@use 'base';
-@use 'utils';
-@use 'abstracts';
-@use 'components';
-@use 'layout';
-@use 'pages';
+@import 'abstracts/breakpoints';
+@import 'abstracts/colors';
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/variables';
 
+@import 'base/base';
+
+@import 'base/root';
+@import 'base/typography';
+
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+@import 'components/icons';
+@import 'components/logo';
+@import 'components/modal';
+@import 'components/navigation';
+@import 'components/newsletter';
+@import 'components/products';
+@import 'components/social-media';
+
+@import 'layout/about-modal';
+@import 'layout/about';
+@import 'layout/advantages';
+@import 'layout/backdrop';
+@import 'layout/contacts-modal';
+@import 'layout/contacts';
+@import 'layout/customer-reviews';
+@import 'layout/footer';
+@import 'layout/gallery';
+@import 'layout/header-modal';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/products-modal';
+@import 'layout/products';
+
+@import 'pages/contact';
+@import 'pages/home';
+@import 'pages/how_its_made';
+@import 'pages/our_products';
+
+@import 'partials/button';
+@import 'partials/typography';
+
+@import 'utils/container';
+@import 'utils/flex';
+@import 'utils/is-hidden';
+@import 'utils/visually-hidden';

@@ -1,9 +1,14 @@
 body {
-  color: #131313;
-  background-color: #aec6a5;
-  font-family: 'Montserrat', sans-serif;
-}
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+  font-family: $montserrat-fonts, $seymour-fonts;
+  font-style: normal;
+  letter-spacing: 0.04em;
 
+  & ul {
+    list-style-type: none;
+  }
+}
 address {
   font-style: inherit;
 }
@@ -14,26 +19,4 @@ button {
   border-radius: 10px;
   font-size: 14px;
   font-family: inherit;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 16px;
-  align-items: center;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }

@@ -43,44 +43,92 @@ button {
   padding-bottom: 60px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* DESCRIPTION
+ *
+ * Andy Bell's Reset 
+ *
+ * https://piccalil.li/blog/a-modern-css-reset
+ * https://andy-bell.co.uk/a-modern-css-reset
+ * https://github.com/Andy-set-studio/modern-css-reset
+ *
+ * Note: please do not modify this file without 
+ *       consulting.
+ *
+ *
+ * Code scope: entire project
+ */
+/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* Remove default margin */
+* {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
   list-style: none;
-  padding-left: 0;
-  margin: 0;
 }
 
-.link {
-  text-decoration: none;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* input, */
+/* button, */
+/* textarea, */
+/* select { */
+/*   font: inherit; */
+/* } */
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .products {
   background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
   background-position: cover;
@@ -160,8 +208,55 @@ ol {
 }
 .contact-component__text--adress {
   color: #d6936d;
-  line-height: 183%;
-  margin-top: 8px;
+  line-height: 1.83;
+  padding-top: 8px;
+}
+.contact-component__text--time {
+  padding-bottom: 8px;
+  color: #ABABAB;
+}
+
+.contact-component__tel,
+.contact-component__email {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  gap: 6px;
+}
+
+.contact-btn__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-btn__item {
+  width: 196px;
+  height: 42px;
+}
+.contact-btn__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-btn__btn {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #F8D24E;
+}
+.contact-btn__btn--franchise {
+  background-color: transparent;
+  border: 2px solid #F8D24E;
 }
 
 .fill {

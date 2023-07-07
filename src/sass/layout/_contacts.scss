@@ -52,7 +52,57 @@
 
     &--adress {
         color: #d6936d;
-        line-height: 183%;
-        margin-top: 8px;
+        line-height: 1.83;
+        padding-top: 8px;
+    }
+    
+    &--time {
+        padding-bottom: 8px;
+        color: $hours-mobile-text-color;
+    }
+}
+
+.contact-component__tel,
+.contact-component__email {
+    color: $primary-text-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    gap: 6px;
+}
+
+.contact-btn__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-btn__item {
+    width: 196px;
+    height: 42px;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.contact-btn__btn {
+    color: $primary-text-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: $button-background-color;
+
+    &--franchise {
+        background-color: transparent;
+        border: 2px solid $button-background-color;
     }
 }

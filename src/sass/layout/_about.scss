@@ -6,15 +6,12 @@
     background-position: 0% 91%;
     padding-bottom: 39px;
   }
-  .about__primary-title {
-    // font-family: 'Titan One';
-    font-size: 18px;
+  .about__label {
+    @include font-face-25
     line-height: 1, 17;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
+        text-align: center;
     text-transform: uppercase;
-    color: getColor('title-helper');
+    color: $secondary-background-color;
     padding-top: 125px;
     margin-bottom: 15px;
   }

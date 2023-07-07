@@ -1,11 +1,9 @@
-@use "../abstracts/colors";
-@use "../abstracts/fonts";
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
 
 .about {
  background-color: $primary-background-color;
-    // background-color: getColor('background');
-    // background-image: url(../images/mobile/advantagesbg.webp);
-    background-repeat: no-repeat;
+       background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 91%;
     padding-bottom: 39px;

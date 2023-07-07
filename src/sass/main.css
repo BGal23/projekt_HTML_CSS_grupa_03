@@ -1,3 +1,25 @@
+body {
+  color: #131313;
+  background-color: #aec6a5;
+  font-family: '$montserrat-fonts', '$seymour-fonts';
+}
+body ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
 /* DESCRIPTION
  *
  * Andy Bell's Reset 
@@ -27,8 +49,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -52,7 +74,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -327,7 +349,7 @@ button {
 }
 .products__main-text {
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
@@ -344,7 +366,7 @@ button {
   }
 }
 .products__main-title {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.2px;
@@ -391,6 +413,7 @@ button {
   position: relative;
   top: -150px;
   background-color: #AEC6A5;
+
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
@@ -414,6 +437,7 @@ button {
   position: relative;
   top: -150px;
   background-color: #EFD478;
+
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
@@ -437,6 +461,7 @@ button {
   position: relative;
   top: -150px;
   background-color: #D6936D;
+
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
@@ -464,7 +489,7 @@ button {
   letter-spacing: 0.8px;
   font-weight: 700;
   font-size: 20px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 @media screen and (min-width: 768px) {
   .products__title {
@@ -481,7 +506,7 @@ button {
 .products__text {
   color: #131313;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.56px;
@@ -563,7 +588,7 @@ button {
 .contact__item {
   padding: 40px 32px 24px 32px;
   width: 280px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
@@ -591,7 +616,7 @@ button {
   line-height: 120%;
   display: inline-block;
   padding: 4px 22px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -605,7 +630,7 @@ button {
 }
 .contact-component__text--time {
   padding-bottom: 8px;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .contact-component__tel,
@@ -644,11 +669,11 @@ button {
   height: 100%;
   border-radius: 10px;
   border: none;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
 }
 .contact-btn__btn--franchise {
   background-color: transparent;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
 }
 
 .fill {
@@ -692,7 +717,7 @@ button {
   display: flex;
   text-align: center;
   align-items: center;
-  color: #FCFCFC;
+  color: #fcfcfc;
   margin: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -725,7 +750,7 @@ button {
 .customer__buttons ul button {
   width: 14px;
   height: 14px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .pg-header {
@@ -792,7 +817,7 @@ button {
 }
 
 .modal__cross.pg-header__modal-cros {
-  fill: #FFFFFF;
+  fill: #ffffff;
   width: 20px;
   height: 20px;
 }
@@ -801,7 +826,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   width: 152px;
   height: 42px;
   padding: 0px;
@@ -826,11 +851,11 @@ button {
   }
 }
 .pg-header-tab-desk__button:hover {
-  background: #0A8817;
+  background: #0a8817;
 }
 .pg-header-tab-desk__button:focus {
-  background: #0A8817;
-  color: #FFFFFF;
+  background: #0a8817;
+  color: #ffffff;
 }
 
 .pg-header__icon-arrow {
@@ -839,20 +864,20 @@ button {
 }
 
 .pg-header-nav__link {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 .pg-header-nav__link:hover {
-  color: #F8D24E;
+  color: #f8d24e;
 }
 .pg-header-nav__link:focus {
-  color: #F8D24E;
+  color: #f8d24e;
 }
 
 .pg-header__mobile-menu.modal {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.23;
-  background-color: #84A178;
+  background-color: #84a178;
   transform: translateX(100%);
   top: 0;
   left: 0;
@@ -911,9 +936,10 @@ button {
 }
 
 .pg-header__mobile-menu-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.pg-header__mobile-menu-link:hover, .pg-header__mobile-menu-link:focus {
+.pg-header__mobile-menu-link:hover,
+.pg-header__mobile-menu-link:focus {
   color: #131313;
 }
 
@@ -955,7 +981,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -969,7 +995,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

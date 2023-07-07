@@ -1,3 +1,5 @@
+
+
 .fill {
         background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
 }
@@ -8,6 +10,12 @@
         align-items: center;
         margin: 50px 0 50px;
         gap: 20px;
+
+    &__icecrem {
+        position: relative;
+        bottom: 50px;
+        width: 100%;
+    }
 
     &__foto {
         border-radius: 50%;
@@ -46,6 +54,7 @@
             & button {
                 width: 14px;
                 height: 14px;
+                
                 background-color: $client-opinions-nav;
             }
         }

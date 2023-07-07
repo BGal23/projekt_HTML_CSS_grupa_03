@@ -1,7 +1,10 @@
 body {
   color: #131313;
-  background-color: #aec6a5;
-  font-family: "Montserrat", sans-serif;
+  background-color: #AEC6A5;
+  font-family: "$montserrat-fonts", "$seymour-fonts";
+}
+body ul {
+  list-style-type: none;
 }
 
 address {
@@ -15,32 +18,6 @@ button {
   border-radius: 10px;
   font-size: 14px;
   font-family: inherit;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 16px;
-  align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* DESCRIPTION
@@ -320,6 +297,11 @@ svg {
   margin: 50px 0 50px;
   gap: 20px;
 }
+.customer__icecrem {
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
 .customer__foto {
   border-radius: 50%;
   overflow: hidden;
@@ -573,6 +555,7 @@ svg {
   .container {
     max-width: 1168px;
     margin: 0 auto 0;
+    padding: 0;
     border: 1px solid orange;
   }
 }
@@ -602,11 +585,4 @@ svg {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: "Montserrat";
-}
-body ul {
-  list-style-type: none;
 }/*# sourceMappingURL=main.css.map */

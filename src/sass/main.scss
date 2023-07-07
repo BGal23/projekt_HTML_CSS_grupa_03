@@ -53,12 +53,3 @@
 @import 'utils/flex';
 @import 'utils/is-hidden';
 @import 'utils/visually-hidden';
-
-
-body {
-    font-family: $montserrat-fonts;
-
-    & ul {
-    list-style-type: none;
-    }
-}

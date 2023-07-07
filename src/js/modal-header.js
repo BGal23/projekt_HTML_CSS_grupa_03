@@ -1,14 +1,14 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+let inputs = [].slice.call(document.querySelectorAll('.buynow-js')),
+  button = document.querySelector('.buynow-button-js');
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+inputs.forEach(function (el) {
+  el.addEventListener('input', checkInputs, false);
+});
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+function checkInputs() {
+  let empty = inputs.filter(function (el) {
+    return el.value.trim() === '';
+  }).length;
+  button.disabled = empty !== 0;
+}
+checkInputs();

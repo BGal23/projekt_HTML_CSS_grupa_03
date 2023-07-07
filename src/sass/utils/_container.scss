@@ -1,13 +1,13 @@
 @media screen and (min-width: 320px) {
     .container {
-    max-width: 280px;
+    max-width: calc(100vw - 40px);  //280px
     margin: 0 auto 0;
     border: 1px solid crimson;
 } 
 }
 @media screen and (min-width: 480px) {
     .container {
-        max-width: 440px;
+        max-width: calc(100vw - 40px); //440px
         margin: 0 auto 0;
         border: 1px solid red;
     }
@@ -15,15 +15,15 @@
 
 @media screen and (min-width: 767px) {
     .container {
-        max-width: 704px;
+        max-width: calc(100vw - 63px); //704px
         margin: 0 auto 0;
         border: 1px solid orangered;
     }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
     .container {
-        max-width: 1168px;
+        max-width: 1168px; //1168px
         margin: 0 auto 0;
         padding: 0;
         border: 1px solid orange;

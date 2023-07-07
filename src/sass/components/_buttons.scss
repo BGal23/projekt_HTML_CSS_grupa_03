@@ -1,0 +1,53 @@
+.button {
+  @include font(14px, 600, null, 1.29);
+  border-radius: 10px;
+  padding: 12px 34px;
+  display: inline-flex;
+  align-items: center;
+  color: $button-text-color;
+  background-color: $button-background-color;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  &:focus {
+    color: $secondary-background-color;
+  }
+
+  &__arrow {
+    margin-left: 4px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-border-hover;
+  }
+
+  &:focus {
+    filter: drop-shadow(0 0 0 $tablet-header-description-color);
+  }
+
+  &:disabled {
+    background-color: $hours-mobile-text-color;
+  }
+
+  &--bg-transperent {
+    background-color: transparent;
+    border: 2px solid $button-background-color;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $button-border-hover;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: $secondary-background-color;
+      border-color: $button-border-hover;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border-color: $hours-mobile-text-color;
+    }
+  }
+}

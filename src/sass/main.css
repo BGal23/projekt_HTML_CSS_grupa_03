@@ -133,6 +133,20 @@ svg {
   background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
   background-position: cover;
 }
+.products__main-text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.products__main-title {
+  font-family: "Seymour One";
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
 .products__flex {
   display: flex;
   flex-direction: column;
@@ -140,22 +154,58 @@ svg {
   align-items: center;
 }
 .products__space {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 .products__ice {
+  position: relative;
   background-color: #AEC6A5;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
 }
 .products__coffee {
+  position: relative;
   background-color: #EFD478;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
 }
 .products__milkshake {
+  position: relative;
   background-color: #D6936D;
+  max-width: 320px;
+  height: 428px;
+  border-radius: 24px;
+  padding-inline: 60px;
 }
 .products__title {
   color: #131313;
+  padding-top: 126px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
 }
 .products__text {
   color: #131313;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 1.71;
+  padding-block: 40px 93px;
+}
+.products__icons {
+  position: absolute;
+  bottom: 16xp;
+  margin: 0 auto;
 }
 
 .section__contact {

@@ -10,7 +10,8 @@
         gap: 20px;
 
     &__foto {
-        display: flex;
+        border-radius: 50%;
+        overflow: hidden;
 
     }
     &__reviews {
@@ -31,6 +32,10 @@
         }
     }
 
+    &__name {
+            @include font($fs20, $fw500, 0, 37.2px);
+    }
+
     &__buttons {
         
         & ul {
@@ -39,7 +44,9 @@
         gap: 20px;
 
             & button {
-                background-color: grey;
+                width: 14px;
+                height: 14px;
+                background-color: $client-opinions-nav;
             }
         }
     }

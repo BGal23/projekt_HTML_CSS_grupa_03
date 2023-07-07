@@ -1,5 +1,5 @@
-@import '../abstracts/colors';
-@import '../abstracts/fonts';
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
 
 .about {
  background-color: $primary-background-color;
@@ -9,9 +9,8 @@
     padding-bottom: 39px;
   }
   .about__label {
-    
     line-height: 1.17em;
-        text-align: center;
+    text-align: center;
     text-transform: uppercase;
     color: red;
     padding-top: 125px;

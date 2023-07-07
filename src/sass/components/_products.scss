@@ -93,7 +93,7 @@
 
     &__ice {
         position: relative;
-        top: -150px;
+        top: -90px;
         background-color: $first-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -109,14 +109,14 @@
             height: 536px;
             max-width: 370px;
             position: relative;
-            top: -200px;
+            top: -140px;
         }
 
     }
 
     &__coffee {
         position: relative;
-        top: -150px;
+        top: -90px;
         background-color: $second-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -132,14 +132,14 @@
             height: 536px;
             max-width: 370px;
             position: relative;
-            top: -200px;
+            top: -140px;
         }
 
     }
 
     &__milkshake {
         position: relative;
-        top: -150px;
+        top: -90px;
         background-color: $third-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -152,7 +152,7 @@
 
         @include desktop {
             position: relative;
-            top: -200px;
+            top: -140px;
             padding-inline: 64px;
             height: 536px;
             max-width: 370px;
@@ -204,13 +204,17 @@
     }
 
     &__icons {
+        background-color: transparent;
         position: absolute;
         left: 44%;
         bottom: 16px;
         cursor: pointer;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover{
-            transform: scale(1.8);
+        border: none;
+        transition: transform 250ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: translate(50%);
         }
 
         @include mobile_2 {

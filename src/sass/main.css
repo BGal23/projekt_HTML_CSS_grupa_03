@@ -798,20 +798,14 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -50px 0 50px;
+  margin: 50px 0 50px;
   gap: 20px;
 }
-.customer__icecrem {
-  position: relative;
-  justify-content: center;
-  bottom: 30px;
-  max-width: 1013px;
-}
-.customer__foto {
+.customer img {
   border-radius: 50%;
   overflow: hidden;
 }
-.customer__reviews {
+.customer div {
   display: flex;
   justify-content: center;
   background-color: #84A178;
@@ -819,11 +813,12 @@ button {
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
-  .customer__reviews {
+  .customer div {
+    width: calc(100vw - 63px);
     max-width: 1013px;
   }
 }
-.customer__reviews p {
+.customer div p {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -835,7 +830,7 @@ button {
   margin: 30px;
 }
 @media screen and (min-width: 768px) {
-  .customer__reviews p {
+  .customer div p {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0;
@@ -843,28 +838,35 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
-  .customer__reviews p {
+  .customer div p {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 26.4px;
   }
 }
-.customer__name {
+.customer span {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 37.2px;
 }
-.customer__buttons ul {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
 }
-.customer__buttons ul button {
-  width: 14px;
-  height: 14px;
-  background-color: #D9D9D9;
+.swiper-pagination-bullet-active {
+  background-color: #84a178;
+}
+
+.icecrem {
+  display: flex;
+  justify-content: center;
+}
+.icecrem__foto {
+  position: relative;
+  justify-content: center;
 }
 
 .header-buy-modal {

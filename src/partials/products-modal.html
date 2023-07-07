@@ -1,5 +1,5 @@
-<div class="modal-products is-hidden">
-  <button class="modal-products__exit">
+<div class="modal-products is-hidden" data-modal-contact>
+  <button class="modal-products__exit" data-modal-contact-close>
     <svg width="20px" height="20px">
       <use href="./images/icons.svg#icon-close-line"></use>
     </svg>
@@ -10,13 +10,20 @@
       <source
         media="(max-width: 767px)"
         srcset="
+          ./images/modal/modal-mobile-chocolate-ice@1x.jpg 1x,
+          ./images/modal/modal-mobile-chocolate-ice@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
           ./images/modal/modal-chocolate-ice@1x.jpg 1x,
           ./images/modal/modal-chocolate-ice@2x.jpg 2x
         "
       />
 
       <img
-        src="./images/modal/modal-chocolate-ice@1x.jpg"
+        src="./images/modal/modal-mobile-chocolate-ice@1x.jpg"
         alt="chocolate ice"
         type="jpg"
         class="modal-products__img"
@@ -70,11 +77,11 @@
           <p class="modal-products__ingredients__list">10g</p>
         </li>
       </ul>
-      <form>
+      <form class="modal-products__form">
         <input name="Name" placeholder="Name" />
         <input name="phone" placeholder="Phone" />
         <textarea placeholder="Comment"></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" class="modal-products__button">Submit</button>
       </form>
     </div>
   </div>

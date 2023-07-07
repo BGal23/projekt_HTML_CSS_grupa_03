@@ -204,13 +204,17 @@
     }
 
     &__icons {
+        background-color: transparent;
         position: absolute;
         left: 44%;
         bottom: 16px;
         cursor: pointer;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover{
-            transform: scale(1.8);
+        border: none;
+        transition: transform 250ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: translate(50%);
         }
 
         @include mobile_2 {

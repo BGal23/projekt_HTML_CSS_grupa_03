@@ -1,5 +1,5 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@import '../abstracts/colors';
+@import '../abstracts/fonts';
 
 .about {
  background-color: $primary-background-color;

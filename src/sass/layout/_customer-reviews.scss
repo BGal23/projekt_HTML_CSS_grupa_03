@@ -1,29 +1,20 @@
-
-
 .fill {
         background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
 }
 
 .customer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: -50px 0 50px;
-        gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px;
+    gap: 20px;
 
-    &__icecrem {
-        position: relative;
-        justify-content: center;
-        bottom: 30px;
-        max-width: 1013px;
-    }
-
-    &__foto {
+    & img {
         border-radius: 50%;
         overflow: hidden;
 
     }
-    &__reviews {
+    & div {
         display: flex;
         justify-content: center;
         background-color: $primary-background-color;
@@ -31,6 +22,7 @@
         border-radius: 10px;
 
         @include tablet {
+            width: calc(100vw - 63px);
             max-width: 1013px;
         }
 
@@ -51,23 +43,17 @@
         }
     }
 
-    &__name {
+    & span {
             @include font($fs20, $fw500, 0, 37.2px);
     }
+}
 
-    &__buttons {
-        
-        & ul {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-            & button {
-                width: 14px;
-                height: 14px;
-
-                background-color: $client-opinions-nav;
-            }
-        }
+.swiper-pagination {
+    &-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    &-bullet-active {
+        background-color: #84a178;
     }
 }

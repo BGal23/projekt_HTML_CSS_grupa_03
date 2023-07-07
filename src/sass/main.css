@@ -282,10 +282,15 @@ svg {
   border-radius: 10px;
 }
 .customer__reviews p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30.6px;
   display: flex;
   text-align: center;
   align-items: center;
   color: #FCFCFC;
+  margin: 30px;
 }
 .customer__buttons ul {
   display: flex;
@@ -538,4 +543,8 @@ svg {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat";
 }/*# sourceMappingURL=main.css.map */

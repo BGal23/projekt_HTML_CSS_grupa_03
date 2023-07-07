@@ -22,11 +22,12 @@
         border-radius: 10px;
 
         & p {
+            @include font($fs12, $fw400, 0, 30.6px);
             display: flex;
             text-align: center;
             align-items: center;
             color: $secondary-background-color;
-            
+            margin: 30px;
         }
     }
 

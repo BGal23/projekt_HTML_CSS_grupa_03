@@ -233,18 +233,18 @@
         display: block;
         position: relative;
         border-radius: 50%;
-        z-index: 998;
+        z-index: 1;
 
         &__one {
             position: inherit;
-            z-index: 999;
+            z-index: 1;
             box-shadow: 0px 16px 0px 0px $first-product-shadow-color;
             border-radius: 50%;
         }
 
         &__two {
             position: inherit;
-            z-index: 999;
+            z-index: 1;
             box-shadow: 0px 16px 0px 0px $second-product-shadow-color;
             ;
             border-radius: 50%;
@@ -252,7 +252,7 @@
 
         &__three {
             position: inherit;
-            z-index: 999;
+            z-index: 1;
             box-shadow: 0px 16px 0px 0px $third-product-shadow-color;
             border-radius: 50%;
         }

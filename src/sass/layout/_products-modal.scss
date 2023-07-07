@@ -1,0 +1,148 @@
+.modal-products {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $tablet-header-description-color;
+    visibility: visible;
+    display: block;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+
+    &__text {
+        text-align: center;
+        font-family: $seymour-fonts;
+        font-size: $fs20;
+        padding-top: 28px;
+        padding-inline: 69px;
+        line-height: 1.4;
+        color: $primary-text-color;
+    }
+
+    &__exit {
+        background-color: transparent;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        border: none;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__img {
+        padding-top: 20px;
+        box-shadow: 0px 7px 0px 0px $first-product-shadow-color;
+        border-radius: 50%;
+        margin: 0 auto;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 29px;
+        padding: 0;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            border-radius: 40px;
+            border: 2px solid $ingredients-ellipse-color;
+            width: 53px;
+            height: 72px;
+            justify-content: space-around;
+
+            & p {
+                font-family: $montserrat-fonts;
+                font-size: 10px;
+                padding-bottom: 8px;
+            }
+
+        }
+
+        &__elipse {
+            position: relative;
+            top: -4px;
+            right: -4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: $ingredients-ellipse-color;
+            font-family: $montserrat-fonts;
+            font-size: 10px;
+            font-weight: 500;
+            width: 43px;
+            height: 43px;
+            padding-top: 8px;
+
+        }
+    }
+
+    &__second-text {
+        font-family: $montserrat-fonts;
+        font-weight: 500;
+        font-size: $fs20;
+        text-align: center;
+        color: $primary-text-color;
+        padding-top: 40px;
+
+    }
+
+    &__ingredients {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-inline: 20px;
+        padding: 0;
+        gap: 11px;
+
+        &__list {
+
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 1.76;
+            letter-spacing: 0.56px;
+
+        }
+    }
+
+    &__list-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-inline: 20px;
+
+        & input {
+            padding: 11px;
+            border-radius: 10px;
+            border: 1px solid #84A178;
+            background: rgba(248, 210, 78, 0.10);
+            font-family: $montserrat-fonts;
+            font-size: $fs14;
+        }
+    }
+}
+
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}

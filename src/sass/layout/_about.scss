@@ -1,4 +1,8 @@
+@use "../abstracts/colors";
+@use "../abstracts/fonts";
+
 .about {
+ background-color: $primary-background-color;
     // background-color: getColor('background');
     // background-image: url(../images/mobile/advantagesbg.webp);
     background-repeat: no-repeat;

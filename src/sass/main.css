@@ -1,7 +1,7 @@
 body {
   color: #131313;
-  background-color: #AEC6A5;
-  font-family: "$montserrat-fonts", "$seymour-fonts";
+  background-color: #aec6a5;
+  font-family: '$montserrat-fonts', '$seymour-fonts';
 }
 body ul {
   list-style-type: none;
@@ -49,8 +49,8 @@ button {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -74,7 +74,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -112,13 +112,13 @@ svg {
 }
 .products__main-text {
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
 }
 .products__main-title {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.2px;
@@ -139,21 +139,21 @@ svg {
 }
 .products__ice {
   position: relative;
-  background-color: #AEC6A5;
+  background-color: #aec6a5;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
 }
 .products__coffee {
   position: relative;
-  background-color: #EFD478;
+  background-color: #efd478;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
 }
 .products__milkshake {
   position: relative;
-  background-color: #D6936D;
+  background-color: #d6936d;
   max-width: 320px;
   height: 428px;
   border-radius: 24px;
@@ -167,12 +167,12 @@ svg {
   letter-spacing: 0.8px;
   font-weight: 700;
   font-size: 20px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 .products__text {
   color: #131313;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.56px;
@@ -198,7 +198,7 @@ svg {
 .contact__item {
   padding: 40px 32px 24px 32px;
   width: 280px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
@@ -226,7 +226,7 @@ svg {
   line-height: 120%;
   display: inline-block;
   padding: 4px 22px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -240,7 +240,7 @@ svg {
 }
 .contact-component__text--time {
   padding-bottom: 8px;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .contact-component__tel,
@@ -279,11 +279,11 @@ svg {
   height: 100%;
   border-radius: 10px;
   border: none;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
 }
 .contact-btn__btn--franchise {
   background-color: transparent;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
 }
 
 .fill {
@@ -309,7 +309,7 @@ svg {
 .customer__reviews {
   display: flex;
   justify-content: center;
-  background-color: #84A178;
+  background-color: #84a178;
   width: 280px;
   height: 256px;
   border-radius: 10px;
@@ -322,7 +322,7 @@ svg {
   display: flex;
   text-align: center;
   align-items: center;
-  color: #FCFCFC;
+  color: #fcfcfc;
   margin: 30px;
 }
 .customer__name {
@@ -339,7 +339,7 @@ svg {
 .customer__buttons ul button {
   width: 14px;
   height: 14px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .pg-header {
@@ -369,7 +369,7 @@ svg {
   padding: 0;
   margin-left: auto;
   margin-right: 32px;
-  background-color: #84A178;
+  background-color: #84a178;
 }
 @media (max-width: 480px) {
   .pg-header__menu-button {
@@ -405,7 +405,7 @@ svg {
 }
 
 .modal__cross.pg-header__modal-cros {
-  fill: #FFFFFF;
+  fill: #ffffff;
   width: 20px;
   height: 20px;
 }
@@ -414,7 +414,7 @@ svg {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   width: 152px;
   height: 42px;
   padding: 0px;
@@ -439,11 +439,11 @@ svg {
   }
 }
 .pg-header-tab-desk__button:hover {
-  background: #0A8817;
+  background: #0a8817;
 }
 .pg-header-tab-desk__button:focus {
-  background: #0A8817;
-  color: #FFFFFF;
+  background: #0a8817;
+  color: #ffffff;
 }
 
 .pg-header__icon-arrow {
@@ -452,20 +452,20 @@ svg {
 }
 
 .pg-header-nav__link {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 .pg-header-nav__link:hover {
-  color: #F8D24E;
+  color: #f8d24e;
 }
 .pg-header-nav__link:focus {
-  color: #F8D24E;
+  color: #f8d24e;
 }
 
 .pg-header__mobile-menu.modal {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.23;
-  background-color: #84A178;
+  background-color: #84a178;
   transform: translateX(100%);
   top: 0;
   left: 0;
@@ -524,9 +524,10 @@ svg {
 }
 
 .pg-header__mobile-menu-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.pg-header__mobile-menu-link:hover, .pg-header__mobile-menu-link:focus {
+.pg-header__mobile-menu-link:hover,
+.pg-header__mobile-menu-link:focus {
   color: #131313;
 }
 
@@ -568,7 +569,7 @@ svg {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -582,7 +583,7 @@ svg {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

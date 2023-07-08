@@ -1,0 +1,88 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 280px;
+
+  @include tablet {
+    max-width: 568px;
+  }
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: $secondary-background-color;
+  transition: 0.3s all;
+  padding: 28px;
+  border: 2px solid $button-background-color;
+
+  @include tablet {
+    padding: 32px 60px;
+  }
+
+  &__title {
+    font-family: $seymour-fonts;
+    text-align: center;
+    @include font(16px, 400, null, 1.5);
+    color: $primary-text-color;
+    margin-bottom: 20px;
+
+    @include tablet {
+      @include font(20px, null, null, 1.4);
+      margin-bottom: 32px;
+    }
+  }
+
+  &__frame {
+    background-color: $button-text-color;
+    border-radius: 10px;
+    max-width: 224px;
+    border: 0;
+    overflow: hidden;
+
+    @include tablet {
+      max-width: 448px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    @include font(14px, 400, 0, 1.4);
+    color: $primary-text-color;
+
+    @include tablet {
+      @include font(16px, nill, null, null);
+    }
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  overflow-y: scroll;
+}
+
+.modal__cross {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    fill: $primary-background-color;
+  }
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,34 +1,30 @@
-
-
 .fill {
         background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
 }
 
 .customer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px 0 50px;
-        gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 250px;
+    gap: 20px;
 
-    &__icecrem {
-        position: relative;
-        bottom: 50px;
-        width: 100%;
-    }
-
-    &__foto {
+    & img {
         border-radius: 50%;
         overflow: hidden;
 
     }
-    &__reviews {
+    & div {
         display: flex;
         justify-content: center;
         background-color: $primary-background-color;
-        width: 280px;
-        height: 256px;
+        max-width: 280px;
         border-radius: 10px;
+
+        @include tablet {
+            width: calc(100vw - 63px);
+            max-width: 1013px;
+        }
 
         & p {
             @include font($fs12, $fw400, 0, 30.6px);
@@ -37,26 +33,28 @@
             align-items: center;
             color: $secondary-background-color;
             margin: 30px;
+
+            @include tablet {
+                @include font($fs14, $fw500, 0, 26.4px);
+                }
+            @include desktop {
+                @include font($fs16, $fw500, 0, 26.4px);
+                }
         }
     }
 
-    &__name {
+    & span {
             @include font($fs20, $fw500, 0, 37.2px);
     }
+}
 
-    &__buttons {
-        
-        & ul {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-            & button {
-                width: 14px;
-                height: 14px;
-                
-                background-color: $client-opinions-nav;
-            }
-        }
+.swiper-pagination {
+    padding-bottom: 200px;
+    &-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    &-bullet-active {
+        background-color: #84a178;
     }
 }

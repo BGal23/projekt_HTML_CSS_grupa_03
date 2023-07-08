@@ -1,0 +1,132 @@
+.pg-footer {
+  background-color: $primary-background-color;
+
+  &__main-wrapper {
+    padding-inline: 20px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__slogan-wrapper {
+    width: 232px;
+    padding-top: 60px;
+
+    @include tablet {
+      padding-block: 40px 32px;
+      width: 50%;
+    }
+
+    @include desktop {
+      padding-block: 120px 60px;
+    }
+  }
+
+  &__slogan {
+    font-family: $montserrat-fonts;
+    @include font($fs18, $fw700, 0, normal);
+    color: $secondary-background-color;
+
+    @include tablet {
+      @include font($fs26, $fw700, 1.04px, normal);
+    }
+
+    @include desktop {
+      @include font($fs30, $fw400, 1.2px, normal);
+    }
+
+    &--accent {
+      font-family: $montserrat-fonts;
+      @include font($fs34, $fw700, 1.36px, normal);
+      color: $secondary-background-color;
+      margin-top: 16px;
+
+      @include tablet {
+        @include font($fs48, $fw700, 2.88px, normal);
+        margin-top: 8px;
+      }
+
+      @include desktop {
+        @include font($fs58, $fw700, 3.48px, normal);
+        margin-top: 14px;
+      }
+    }
+  }
+
+  &__find-us-wrapper {
+    padding-block: 60px 40px;
+
+    @include tablet {
+      padding-block: 100px 60px;
+    }
+
+    @include desktop {
+      padding-block: 138px 60px;
+    }
+  }
+
+  &__contact-phone {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    padding-top: 20px;
+
+    @include tablet {
+      padding-top: 34px;
+    }
+
+    @include desktop {
+      padding-top: 40px;
+    }
+  }
+
+  &__cta-phone {
+    font-family: $montserrat-fonts;
+    @include font($fs12, $fw700, 0, 186%);
+    color: $primary-text-color;
+
+    @include tablet {
+      @include font($fs14, $fw700, 0, 186%);
+    }
+
+    @include desktop {
+      @include font($fs16, $fw700, 0.32px, 186%);
+    }
+  }
+
+  &__phone-no-link {
+    font-family: $montserrat-fonts;
+    @include font($fs12, $fw700, 0, 186%);
+    color: $secondary-background-color;
+
+    @include tablet {
+      @include font($fs14, $fw700, 0, 186%);
+    }
+  }
+
+  &__copyrights-wrapper {
+    padding-block: 20px;
+    text-align: center;
+    border-top: 1px solid $horizontal-line-color;
+
+    @include tablet {
+      padding-block: 12px;
+    }
+  }
+
+  &__copyrights-text {
+    color: $all-rights-text-color;
+    font-family: $montserrat-fonts;
+    @include font($fs14, $fw700, 0, 152%);
+
+    @include tablet {
+      @include font($fs14, $fw700, 0.28px, 186%);
+    }
+
+    @include desktop {
+      @include font($fs12, $fw700, 0.24px, 186%);
+    }
+  }
+}

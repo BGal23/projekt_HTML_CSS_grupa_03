@@ -8,11 +8,11 @@ background-repeat: no-repeat;
     // margin: 0 15px 0 15px;
 
   &__label {
-       line-height: 1.17em;
+    line-height: 1.17em;
     text-align: center;
     text-transform: uppercase;
     color: $secondary-background-color;
- font-family: $montserrat-fonts
+    font-family: $montserrat-fonts;
     // padding-top: 125px;
     // margin-bottom: 15px;
     @include font($fs18, $fw700, 0, 37.2px);
@@ -57,6 +57,4 @@ box-shadow:  rgba(248, 210, 78, 0.7) 0px -25px 0px 0px;
     padding: 0;
     margin: auto;
     margin-top: 17px;
-  
-    }
-}
+  }}

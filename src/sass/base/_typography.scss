@@ -1,5 +1,12 @@
 /* CURSOR */
+
+html {
+  cursor: url('../images/cursor-ice.svg'), pointer;
+}
+
 a,
-button {
+button,
+a:hover,
+button:hover {
   cursor: url('../images/active-cursor.svg'), pointer;
 }

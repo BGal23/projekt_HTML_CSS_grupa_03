@@ -20,10 +20,9 @@ margin: 20px 0 0 0;
 left: 20px;
 width: auto;
 height: auto;
-
 z-index: 1;
 border-radius: 50%;
-box-shadow:  rgba(248, 210, 78, 0.7) 100%, 0px -25px 0px 0px;
+box-shadow: rgba(248, 210, 78, 0.9) 0px -25px 0px 0px;
 
 }
     &__main-title {
@@ -60,30 +59,32 @@ box-shadow:  rgba(248, 210, 78, 0.7) 100%, 0px -25px 0px 0px;
   margin:  340px 0 7px 0;
   @include font ($fs12, $fw400, 0.48, 176%)
 }
-&__description--text:last-child {
-  margin-top: 20px;
+&__description--text:nth-child(2) {
+margin-bottom: 5px;
 }
-    &__button {
+
+&__button {
     width: 164px;
     height: 42px;
     background-color: $button-background-color;
     color: $button-text-color;
     font-family: $montserrat-fonts;
-    border-radius: 15px;
+    border-radius: 11px;
     color: $button-text-color;
     border: none;
     font-style: normal;
     display: flex; 
     top: 50px;
     justify-content: center;
-    // text-align: center;
-    padding: 0;
-    margin: auto;
-    margin-top: 17px;
+    text-align: center;
+    padding: 12px 0 0 30px;
+    margin: 24px auto auto;
+    // margin-top: 17px;
     @include font($fs14, $fw600, 0, 1.28);
   }
 &__icon {
-  inset: 0;
+  // inset: 0;
   fill: $button-text-color;
+margin: 3px auto auto 3px;
 }
 }

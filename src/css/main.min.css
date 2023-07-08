@@ -106,8 +106,7 @@ svg {
   }
 }
 .btn-product {
-  width: 6.7rem;
-  height: 2.375em;
+  padding: 0.6875em 1.625em;
   flex-shrink: 0;
   border: 2px solid #f8d24e;
   border-radius: 0.5rem;
@@ -568,15 +567,21 @@ svg {
 /*  36px = 2.25rem  */
 /*  48px = 3rem  */
 /*  58px = 3.625rem  */
+.hero {
+  height: 403px;
+  overflow: hidden;
+}
 .hero .container {
   height: 100%;
   position: relative;
   width: 100%;
   padding-right: 2.06em; /* 20px */
+  z-index: 1;
 }
 .hero__bg {
   flex-shrink: 0;
   background-color: #84A178;
+  background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -597,7 +602,59 @@ svg {
   letter-spacing: 0.065rem;
   line-height: normal;
 }
-
+.hero__list {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75em;
+  margin-top: 2em;
+}
+.hero__item {
+  margin: 0;
+}
+.hero__link {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.hero__link-text {
+  color: #F8D24E;
+  text-align: center;
+  font-family: Montserrat;
+  text-decoration-line: underline;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.hero__img-box {
+  position: absolute;
+  bottom: 0;
+  width: 177px;
+  right: 20%;
+}
+@media screen and (min-width: 320px) {
+  .hero__img-box {
+    right: 15%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__img-box {
+    width: 268px;
+    right: 12%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__img-box {
+    width: 268px;
+    right: 12%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__img-box {
+    width: 456px;
+    right: 7%;
+  }
+}
 @media screen and (min-width: 320px) {
   .container {
     max-width: 280px;

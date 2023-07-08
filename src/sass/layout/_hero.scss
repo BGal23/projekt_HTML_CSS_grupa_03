@@ -1,0 +1,120 @@
+/*  HERO
+ *
+ */
+
+//wielkość
+$fs075: 0.75rem; /*  12px = 0.75rem  */
+$fs0875: 0.875rem; /*  14px = 0.875rem  */
+$fs1: 1rem; /*  16px = 1rem  */
+$fs1125: 1.125rem; /*  18px = 1.125rem  */
+$fs125: 1.25rem; /*  20px = 1.25rem  */
+$fs1375: 1.375rem; /*  22px = 1.375rem  */
+$fs1625: 1.625rem; /*  26px = 1.625rem  */
+$fs1875: 1.875rem; /*  30px = 1.875rem  */
+$fs2125: 2.125rem; /*  34px = 2.125rem  */
+$fs225: 2.25rem; /*  36px = 2.25rem  */
+$fs3: 3rem; /*  48px = 3rem  */
+$fs3625: 3.625; /*  58px = 3.625rem  */
+
+// .container {
+//   width: 100%;
+//   padding-left: 1.25em; /* 20px */
+//   padding-right: 1.25em; /* 20px */
+//   margin: 0 auto;
+// }
+
+.hero {
+  height: 403px;
+  overflow: hidden;
+  & .container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    // padding-left: 1.25em; /* 20px */
+    padding-right: 2.06em; /* 20px */
+    z-index: 1;
+    // margin: 0 auto;
+  }
+  &__bg {
+    // width: 20rem;
+    // height: 31.375rem;
+    flex-shrink: 0;
+    background-color: $primary-background-color;
+    background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  &__title {
+    display: flex;
+    width: 15.4375rem;
+    height: 6.0625rem;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  &__title-text {
+    color: #fcfcfc;
+    font-family: Seymour One;
+    font-style: normal;
+    text-transform: uppercase;
+    @include font(1.625rem, 400, 0.065rem, normal);
+  }
+  &__list {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75em;
+    margin-top: 2em;
+  }
+  &__item {
+    margin: 0;
+    // padding: 0;
+    // display: inline-block;
+  }
+  &__link {
+    display: flex;
+    // width: 6.25rem;
+    // height: 1.5rem;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  &__link:hover {
+  }
+  &__link-text {
+    color: $button-background-color;
+    text-align: center;
+    font-family: Montserrat;
+    // font-size: 0.75rem;
+    // font-style: SemiBold;
+    // font-weight: 600;
+    // line-height: normal;
+    text-decoration-line: underline;
+    @include font(0.75rem, 600, 0, normal);
+  }
+  &__img-box {
+    position: absolute;
+    bottom: 0;
+    width: 177px;
+    right: 20%;
+
+    @include mobile_1 {
+      right: 15%;
+    }
+
+    @include mobile_2 {
+      width: 268px;
+      right: 12%;
+    }
+
+    @include tablet {
+      width: 268px;
+      right: 12%;
+    }
+
+    @include desktop {
+      width: 456px;
+      right: 7%;
+    }
+  }
+  &__img-ice {
+    // margin: 0 20%;
+  }
+}

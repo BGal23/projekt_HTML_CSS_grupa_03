@@ -1742,7 +1742,7 @@ button {
 /*  48px = 3rem  */
 /*  58px = 3.625rem  */
 .hero {
-  height: 403px;
+  height: 430px;
   overflow: hidden;
 }
 .hero .container {
@@ -1765,6 +1765,7 @@ button {
   height: 6.0625rem;
   flex-direction: column;
   flex-shrink: 0;
+  margin-top: 2.5em;
 }
 .hero__title-text {
   color: #fcfcfc;
@@ -1775,6 +1776,13 @@ button {
   font-weight: 400;
   letter-spacing: 0.065rem;
   line-height: normal;
+}
+.hero__title-text--big {
+  display: block;
+  font-size: 2.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.965;
 }
 .hero__list {
   display: flex;

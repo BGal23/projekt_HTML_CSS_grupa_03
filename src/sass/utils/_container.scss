@@ -2,14 +2,12 @@
     .container {
     max-width: calc(100vw - 40px);  //280px
     margin: 0 auto 0;
-    border: 1px solid crimson;
 } 
 }
 @media screen and (min-width: 480px) {
     .container {
         max-width: calc(100vw - 40px); //440px
         margin: 0 auto 0;
-        border: 1px solid red;
     }
 }
 
@@ -17,7 +15,6 @@
     .container {
         max-width: calc(100vw - 63px); //704px
         margin: 0 auto 0;
-        border: 1px solid orangered;
     }
 }
 
@@ -26,7 +23,6 @@
         max-width: 1168px; //1168px
         margin: 0 auto 0;
         padding: 0;
-        border: 1px solid orange;
     }
 }
 

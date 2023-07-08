@@ -21,7 +21,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    
+  }
+}
 .button {
   @include font(14px, 600, null, 1.29);
   border-radius: 10px;

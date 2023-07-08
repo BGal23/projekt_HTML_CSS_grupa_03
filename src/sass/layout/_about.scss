@@ -52,7 +52,7 @@ box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
         justify-content: center;
     }
     &__description--text {
-      @include font ($fs12, $fw400, )
+      @include font ($fs12, $fw400, 0, 30px )
     }
 
   

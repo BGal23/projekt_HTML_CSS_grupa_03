@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* DESCRIPTION
  *
  * Andy Bell's Reset 
@@ -415,6 +416,21 @@ button {
   border-radius: 24px;
   padding-inline: 60px;
 }
+.products__ice::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  height: 100px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  background-color: #AEC6A5;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
 @media screen and (min-width: 768px) {
   .products__ice {
     padding-inline: 26px;
@@ -438,6 +454,22 @@ button {
   border-radius: 24px;
   padding-inline: 60px;
 }
+.products__coffee::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  height: 100px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  background-color: #EFD478;
+  /* Kolor cienia półksiężyca */
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
 @media screen and (min-width: 768px) {
   .products__coffee {
     padding-inline: 26px;
@@ -460,6 +492,22 @@ button {
   height: 428px;
   border-radius: 24px;
   padding-inline: 60px;
+}
+.products__milkshake::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  height: 100px;
+  /* Dostosuj wielkość cienia półksiężyca */
+  background-color: #D6936D;
+  /* Kolor cienia półksiężyca */
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .products__milkshake {
@@ -569,6 +617,51 @@ button {
   z-index: 1;
   box-shadow: 0px 16px 0px 0px rgba(213, 117, 63, 0.7);
   border-radius: 50%;
+}
+
+.products__img__one::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 200px;
+  background-color: #000;
+  /* Kolor cienia dla pierwszego obrazka */
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.products__img__two::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 180px;
+  background-color: #ff0000;
+  /* Kolor cienia dla drugiego obrazka */
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.products__img__three::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 220px;
+  background-color: #00ff00;
+  /* Kolor cienia dla trzeciego obrazka */
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .social-media {
@@ -1747,12 +1840,13 @@ button {
   display: block;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+  border-radius: 20px;
   overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .modal-products {
+    top: 30px;
     width: 568px;
-    height: 996px;
     margin: 0 auto;
     overflow: auto;
   }
@@ -1904,6 +1998,12 @@ button {
   resize: none;
   height: 84px;
 }
+@media screen and (min-width: 768px) {
+  .modal-products__form textarea {
+    width: 368px;
+    margin: 0 auto;
+  }
+}
 .modal-products__button {
   border-radius: 10px;
   background-color: #F8D24E;
@@ -1922,6 +2022,12 @@ button {
 .modal-products__button:focus {
   background-color: #0A8817;
   color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .modal-products__button {
+    margin: 32px 199px;
+    padding: 12px 32px;
+  }
 }
 
 .is-hidden {

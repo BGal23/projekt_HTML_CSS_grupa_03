@@ -1,25 +1,27 @@
 .about {
 background-color: $primary-background-color;
 background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0% 91%;
+    // background-size: contain;
+    // background-position: 0% 91%;
     padding-bottom: 39px;
     align-items: center;
     // margin: 0 15px 0 15px;
 
   &__label {
-    line-height: 1.17em;
+       line-height: 1.17em;
     text-align: center;
     text-transform: uppercase;
     color: $secondary-background-color;
+ font-family: $montserrat-fonts
     // padding-top: 125px;
     // margin-bottom: 15px;
-    @include font($fs20, $fw500, 0, 37.2px);
+    @include font($fs18, $fw700, 0, 37.2px);
   }
     &__img {
-display: block;
-margin: auto;
-max-width: 91%;
+      position: absolute;
+// display: block;
+margin: 0;
+width: 100%;
 height: auto;
 position: inherit;
 z-index: 1;
@@ -57,4 +59,4 @@ box-shadow:  rgba(248, 210, 78, 0.7) 0px -25px 0px 0px;
     margin-top: 17px;
   
     }
-  }
+}

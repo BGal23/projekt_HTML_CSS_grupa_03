@@ -99,6 +99,21 @@
         height: 428px;
         border-radius: 24px;
         padding-inline: 60px;
+        &::after {
+                content: "";
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                height: 100px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                background-color: $first-product-card-color;
+                border-radius: 50%;
+                opacity: 0.3;
+                z-index: -1;
+            }
 
         @include tablet {
             padding-inline: 26px;
@@ -122,6 +137,22 @@
         height: 428px;
         border-radius: 24px;
         padding-inline: 60px;
+        &::after {
+                content: "";
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                height: 100px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                background-color: $second-product-card-color;
+                /* Kolor cienia półksiężyca */
+                border-radius: 50%;
+                opacity: 0.3;
+                z-index: -1;
+            }
 
         @include tablet {
             padding-inline: 26px;
@@ -145,6 +176,22 @@
         height: 428px;
         border-radius: 24px;
         padding-inline: 60px;
+        &::after {
+                content: "";
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                height: 100px;
+                /* Dostosuj wielkość cienia półksiężyca */
+                background-color: $third-product-card-color;
+                /* Kolor cienia półksiężyca */
+                border-radius: 50%;
+                opacity: 0.3;
+                z-index: -1;
+            }
 
         @include tablet {
             padding-inline: 26px;
@@ -244,6 +291,7 @@
             z-index: 1;
             box-shadow: 0px 16px 0px 0px $first-product-shadow-color;
             border-radius: 50%;
+            
         }
 
         &__two {
@@ -262,4 +310,48 @@
         }
     }
 
+}
+.products__img__one::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 200px;
+    background-color: #000;
+    /* Kolor cienia dla pierwszego obrazka */
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.products__img__two::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 180px;
+    background-color: #ff0000;
+    /* Kolor cienia dla drugiego obrazka */
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.products__img__three::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 220px;
+    background-color: #00ff00;
+    /* Kolor cienia dla trzeciego obrazka */
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
 }

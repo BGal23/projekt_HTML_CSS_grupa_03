@@ -67,13 +67,23 @@ box-shadow:  rgba(248, 210, 78, 0.7) 100%, 0px -25px 0px 0px;
     width: 164px;
     height: 42px;
     background-color: $button-background-color;
+    color: $button-text-color;
     font-family: $montserrat-fonts;
     border-radius: 15px;
+    color: $button-text-color;
     border: none;
     font-style: normal;
     display: flex; 
+    top: 50px;
+    justify-content: center;
+    // text-align: center;
     padding: 0;
     margin: auto;
     margin-top: 17px;
     @include font($fs14, $fw600, 0, 1.28);
-  }}
+  }
+&__icon {
+  inset: 0;
+  fill: $button-text-color;
+}
+}

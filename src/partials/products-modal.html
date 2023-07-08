@@ -77,11 +77,13 @@
           <p class="modal-products__ingredients__list">10g</p>
         </li>
       </ul>
-      <form class="modal-products__form">
-        <input name="Name" placeholder="Name" />
-        <input name="phone" placeholder="Phone" />
+      <form class="modal-products__form" id="myForm">
+        <input name="Name" placeholder="Name" id="nameInput" />
+        <input name="phone" placeholder="Phone" id="phoneInput" />
         <textarea placeholder="Comment"></textarea>
-        <button type="submit" class="modal-products__button">Submit</button>
+        <button type="submit" class="modal-products__button" id="submitButton" disabled>
+          Submit
+        </button>
       </form>
     </div>
   </div>

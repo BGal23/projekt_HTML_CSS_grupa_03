@@ -43,6 +43,33 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+
+    // @include mobile_1 {
+    //   height: 349px;
+    //   background-image: url(../images/hero-dots-mobile.svg);
+    //   background-position: bottom right 10%;
+    // }
+
+    @include mobile_2 {
+      height: 349px;
+      background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon-1.svg);
+      // background-position: bottom right 0;
+      background-position: right 0 bottom;
+    }
+
+    @include tablet {
+      height: 349px;
+      padding-top: 14px;
+      background-image: url(./../images/Tablet/mobiledotted-wavebackgr-tablet.svg);
+      background-position: bottom;
+    }
+
+    @include desktop {
+      height: 591px;
+      padding-top: 45px;
+      background-image: url(./../images/Desktop/mobiledotted-wavebackgr-desktop.svg);
+      background-position: bottom;
+    }
   }
   &__title {
     display: flex;
@@ -105,8 +132,9 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     }
 
     @include mobile_2 {
-      width: 268px;
-      right: 12%;
+      width: 218px;
+      // right: 12%;
+      right: 0;
     }
 
     @include tablet {

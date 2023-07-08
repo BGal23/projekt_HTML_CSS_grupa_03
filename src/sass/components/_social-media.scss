@@ -1,0 +1,33 @@
+.social-media {
+  padding: 1px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    @include tablet {
+      gap: 30px;
+    }
+  }
+
+  &__icon-wrapper {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $button-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: $primary-background-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover .social-media__icon,
+  &__link:focus .social-media__icon {
+    fill: $secondary-background-color;
+  }
+}

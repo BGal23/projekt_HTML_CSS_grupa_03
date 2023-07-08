@@ -1,9 +1,20 @@
 .icecrem {
+    position: relative;
+    top: 100px;
     display: flex;
     justify-content: center;
+    margin-bottom: -100px;
 
     &__foto {
         position: relative;
         justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+        @include tablet {
+            border-radius: 20px;
+        }
+        @include desktop {
+            border-radius: 25px;
+        }
     }
 }

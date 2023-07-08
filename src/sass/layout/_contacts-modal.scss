@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 30;
+}
+.modal-loc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $secondary-background-color;
+  width: 95%;
+  max-width: 280px;
+  height: 95%;
+  max-height: 365px;
+  overflow: scroll;
+  border-radius: 10px;
+  border: 2px solid $button-background-color;
+  padding: 28px;
+
+  &__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: $secondary-background-color;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    width: 100%;
+    max-width: 568px;
+    min-height: 458px;
+    padding: 32px 60px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $seymour-fonts;
+    @include font(16px, 400, null, 1.5);
+    margin-bottom: 20px;
+
+    @include tablet {
+      @include font(20px, 400, null, 1.4);
+      margin-bottom: 32px;
+    }
+  }
+
+  &__frame {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 24px;
+
+    @include tablet {
+      width: 448px;
+      height: 260px;
+      margin-bottom: 32px;
+    }
+  }
+  &__btn {
+    display: block;
+    padding: 12px 0;
+    background-color: $button-background-color;
+    @include font(14px, 600, null, normal);
+    border-radius: 10px;
+    color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 42px;
+    text-align: center;
+
+    @include tablet {
+      width: 145px;
+    }
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

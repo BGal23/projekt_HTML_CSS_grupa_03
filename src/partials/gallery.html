@@ -1,5 +1,19 @@
 <div class="container icecrem">
     <div class="icecrem__foto">
-        <img src="./images/mobile/mobile-lying-ice-cream@2x.jpg" alt="icecrem">
+        <picture class="products__img">
+            <source media="(min-width: 1200px)" srcset="
+                    ./images/desktop/desktop-lying-ice-cream@1x.jpg 1x,
+                    ./images/desktop/desktop-lying-ice-cream@2x.jpg 2x
+                    " />
+            <source media="(min-width: 768px)" srcset="
+                    ./images/tablet/tablet-lying-ice-cream@1x.jpg 1x,
+                    ./images/tablet/tablet-lying-ice-cream@2x.jpg 2x
+                    " />
+            <source media="(max-width: 767px)" srcset="
+                    ./images/mobile/mobile-lying-ice-cream@1x.jpg 1x,
+                    ./images/mobile/mobile-lying-ice-cream@2x.jpg 2x
+                    " />
+            <img src="./images/mobile/mobile-lying-ice-cream@1x.jpg" alt="lody" type="jpg"/>
+        </picture>
     </div>
 </div>

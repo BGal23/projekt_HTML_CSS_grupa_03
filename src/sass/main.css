@@ -1759,6 +1759,29 @@ button {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+@media screen and (min-width: 480px) {
+  .hero__bg {
+    height: 349px;
+    background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon-1.svg);
+    background-position: right 0 bottom;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__bg {
+    height: 349px;
+    padding-top: 14px;
+    background-image: url(./../images/Tablet/mobiledotted-wavebackgr-tablet.svg);
+    background-position: bottom;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__bg {
+    height: 591px;
+    padding-top: 45px;
+    background-image: url(./../images/Desktop/mobiledotted-wavebackgr-desktop.svg);
+    background-position: bottom;
+  }
+}
 .hero__title {
   display: flex;
   width: 15.4375rem;
@@ -1821,8 +1844,8 @@ button {
 }
 @media screen and (min-width: 480px) {
   .hero__img-box {
-    width: 268px;
-    right: 12%;
+    width: 218px;
+    right: 0;
   }
 }
 @media screen and (min-width: 768px) {

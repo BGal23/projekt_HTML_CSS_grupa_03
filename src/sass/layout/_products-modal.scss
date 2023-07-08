@@ -28,7 +28,7 @@
         line-height: 1.4;
         color: $primary-text-color;
 
-        @include tablet {
+        @include mobile_2 {
             padding-inline: 128px;
         }
     }
@@ -80,7 +80,7 @@
                 padding-bottom: 8px;
             }
 
-            @include tablet {
+            @include mobile_2 {
                 width: 65px;
                 height: 90px;
 
@@ -105,7 +105,7 @@
             height: 43px;
             padding-top: 8px;
 
-            @include tablet {
+            @include mobile_2 {
                 width: 53px;
                 height: 53px;
             }
@@ -133,7 +133,7 @@
         gap: 11px;
         margin-block: 24px 0;
 
-        @include tablet {
+        @include mobile_2 {
             margin-inline: 40px;
         }
 
@@ -169,7 +169,10 @@
             font-family: $montserrat-fonts;
             font-size: $fs14;
             margin: 0 auto;
+            width: 240px;
+        @include mobile_2{
             width: 368px;
+        }
         }
 
         & textarea {
@@ -180,15 +183,17 @@
             font-family: $montserrat-fonts;
             font-size: $fs14;
             resize: none;
+            width: 240px;
             height: 84px;
-            @include tablet{
+            margin: 0 auto;
+            @include mobile_2{
                 width: 368px;
                 margin: 0 auto;
             }
         }
     }
 
-    &__button {
+    &__button{
         border-radius: 10px;
         background-color: $button-background-color;
         padding: 10px 34px;
@@ -199,18 +204,25 @@
         font-family: $montserrat-fonts;
         font-size: $fs14;
         font-weight: 600;
-
-        &:hover {
+        width: 132px;
+        height: 42px;
+        margin: 24px auto 28px;
+        &:disabled{
+            background-color:$hours-mobile-text-color;
+        }
+        &:enabled:hover {
             background-color: $button-border-hover ;
         }
 
-        &:focus {
+        &:enabled:focus {
             background-color: $button-border-hover ;
             color: $secondary-background-color;
         }
-        @include tablet {
-            margin: 32px 199px;
+        @include mobile_2 {
+            margin: 32px auto;
             padding: 12px 32px;
+            width: 121px;
+            height: 42px;
         }
     }
 }

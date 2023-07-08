@@ -71,8 +71,11 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     fill: $primary-background-color;

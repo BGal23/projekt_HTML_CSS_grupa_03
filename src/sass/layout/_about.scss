@@ -1,8 +1,6 @@
 .about {
 background-color: $primary-background-color;
 background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: 0% 91%;
     padding-bottom: 39px;
     align-items: center;
     // margin: 0 15px 0 15px;
@@ -13,17 +11,16 @@ background-repeat: no-repeat;
     text-transform: uppercase;
     color: $secondary-background-color;
     font-family: $montserrat-fonts;
-    // padding-top: 125px;
-    // margin-bottom: 15px;
     @include font($fs18, $fw700, 0, 37.2px);
     margin-top: 61px;
   }
     &__img {
-      position: absolute;
-margin: 0;
+position: absolute;
+margin: 20px 0 0 0;
+left: 20px;
 width: auto;
 height: auto;
-top: 2400px;
+
 z-index: 1;
 border-radius: 50%;
 box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
@@ -46,16 +43,23 @@ box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
 
     &__description {
         color: $secondary-background-color;
-        margin-top: 372px;
-        // display: flex;
+      top: 340px;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
+        max-width: 220px;
     }
     &__description--text {
-      @include font ($fs12, $fw400, 0, 30px )
-    }
+      font-family: $montserrat-fonts;
+      justify-content: center;
+      text-align: center;
+      @include font ($fs12, $fw400, 0.48, 162%)
+        }
 
-  
+&__description--text:first-child {
+  margin-top:  340px;
+}
+
     &__button {
     width: 176px;
     height: 44px;

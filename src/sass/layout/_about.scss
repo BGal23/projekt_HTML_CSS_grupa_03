@@ -23,7 +23,7 @@ height: auto;
 
 z-index: 1;
 border-radius: 50%;
-box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
+box-shadow:  rgba(248, 210, 78, 0.7), 0px -25px 0px 0px;
 
 }
     &__main-title {
@@ -53,18 +53,21 @@ box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
       font-family: $montserrat-fonts;
       justify-content: center;
       text-align: center;
-      @include font ($fs12, $fw400, 0.48, 162%)
+      @include font ($fs12, $fw400, 0, 162%)
         }
 
 &__description--text:first-child {
   margin-top:  340px;
+  @include font ($fs12, $fw400, 0.48, 176%)
 }
-
+&__description--text:last-child {
+  margin-top: 8px;
+}
     &__button {
     width: 176px;
     height: 44px;
     background-color: $button-background-color;
-    border-radius: 22px;
+    border-radius: 15px;
     border: none;
     font-style: normal;
     font-weight: 700;

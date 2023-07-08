@@ -24,7 +24,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 // }
 
 .hero {
-  height: 403px;
+  height: 430px;
   overflow: hidden;
   & .container {
     height: 100%;
@@ -50,6 +50,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     height: 6.0625rem;
     flex-direction: column;
     flex-shrink: 0;
+    margin-top: 2.5em;
   }
   &__title-text {
     color: #fcfcfc;
@@ -57,6 +58,10 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     font-style: normal;
     text-transform: uppercase;
     @include font(1.625rem, 400, 0.065rem, normal);
+  }
+  &__title-text--big {
+    display: block;
+    @include font(2.125rem, 400, 0, 0.965);
   }
   &__list {
     display: flex;

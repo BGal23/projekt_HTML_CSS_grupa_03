@@ -40,7 +40,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     // height: 31.375rem;
     flex-shrink: 0;
     background-color: $primary-background-color;
-    background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon.svg);
+    background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -52,7 +52,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 
     @include mobile_2 {
       height: 349px;
-      background-image: url(./../images/Mobile/mobiledotted-wavebackgr-phon-1.svg);
+      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
       // background-position: bottom right 0;
       background-position: right 0 bottom;
     }
@@ -60,14 +60,14 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     @include tablet {
       height: 349px;
       padding-top: 14px;
-      background-image: url(./../images/Tablet/mobiledotted-wavebackgr-tablet.svg);
+      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
       background-position: bottom;
     }
 
     @include desktop {
       height: 591px;
       padding-top: 45px;
-      background-image: url(./../images/Desktop/mobiledotted-wavebackgr-desktop.svg);
+      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
       background-position: bottom;
     }
   }
@@ -108,8 +108,8 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     flex-direction: column;
     flex-shrink: 0;
   }
-  &__link:hover {
-  }
+  //&__link:hover {
+  //}
   &__link-text {
     color: $button-background-color;
     text-align: center;
@@ -147,7 +147,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
       right: 7%;
     }
   }
-  &__img-ice {
+  //&__img-ice {
     // margin: 0 20%;
-  }
+  //}
 }

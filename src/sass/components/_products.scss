@@ -1,33 +1,33 @@
 .products {
-    background-image: url(../images/Mobile/mobile-mainbackgr@1x.jpg);
+    background-image: url(../images/mobile/mobile-mainbackgr@1x.jpg);
     background-position: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/Mobile/mobile-mainbackgr@2x.jpg);
+        background-image: url(../images/mobile/mobile-mainbackgr@2x.jpg);
     }
 
     @include tablet {
-        background-image: url(../images/Tablet/tablet-mainbackgr@1x.jpg);
+        background-image: url(../images/tablet/tablet-mainbackgr@1x.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/Tablet/tablet-mainbackgr@2x.jpg);
+            background-image: url(../images/tablet/tablet-mainbackgr@2x.jpg);
         }
     }
 
     @include desktop {
-        background-image: url(../images/Desktop/desktop-mainbackgr@1x.jpg);
+        background-image: url(../images/desktop/desktop-mainbackgr@1x.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/Desktop/desktop-mainbackgr@2x.jpg);
+            background-image: url(../images/desktop/desktop-mainbackgr@2x.jpg);
         }
     }
 

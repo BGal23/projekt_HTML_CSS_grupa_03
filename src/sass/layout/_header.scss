@@ -59,10 +59,13 @@
   }
 }
 
-.modal__cross.pg-header__modal-cros {
+.pg-header__modal-cros {
   fill: $tablet-header-description-color;
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
 }
 
 .pg-header-tab-desk {

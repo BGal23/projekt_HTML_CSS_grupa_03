@@ -1,41 +1,70 @@
 .section__contact {
   padding: 0 0 60px 0;
+  margin-top: -349px;
+
+  @include tablet {
+    margin-top: -299px;
+  }
+
+  @include desktop {
+    margin-top: -128px;
+  }
 }
 
 .contact__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 
   @include tablet {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 16px;
+    flex-direction: row;
+  }
+
+  @include desktop {
+    gap: 32px;
   }
 }
 
 .contact__item {
   padding: 40px 32px 24px 32px;
-  width: 280px;
+  max-width: 280px;
+  height: 412px;
   background-color: $secondary-background-color;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 
   @include tablet {
-    width: 224px;
+    max-width: 224px;
+    height: 537px;
+    padding: 40px 24px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
-
-    @include tablet {
-      margin-bottom: 0;
-    }
+  @include desktop {
+    max-width: 368px;
+    height: 542px;
+    padding: 40px;
   }
-}
+
+  // &:not(:last-child) {
+  //   margin-bottom: 16px;
+
+  //   @include tablet {
+  //     margin-bottom: 0;
+  //   }
+  }
 
 .contact-component__item {
   margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -51,17 +80,20 @@
     }
   }
 }
-
+.contact-component__item-gap {
+  padding-bottom: 8px;
+}
 .contact-component__text {
   font: 'Montserrat';
   color: $primary-text-color;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  @include font(12px, 500, 0.04em, 1.86);
 
   @include tablet {
     font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 
   &--category {
@@ -94,7 +126,6 @@
   }
 
   &--time {
-    padding-bottom: 8px;
     color: $hours-mobile-text-color;
   }
 }
@@ -102,12 +133,17 @@
 .contact-component__tel,
 .contact-component__email {
   color: $primary-text-color;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.04em;
+  @include font(12px, 500, 0.04em, 1.6);
   gap: 6px;
   text-decoration: none;
+
+  @include tablet {
+    @include font(14px, 500, null, 1.5);
+  }
+
+  @include desktop {
+    @include font(16px, 500, null, 1.5);
+  }
 }
 
 .contact-btn__list {
@@ -115,6 +151,12 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+  }
 }
 
 .contact-btn__item {
@@ -124,15 +166,26 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+  }
 }
 
+// .contact-btn__item {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: center;
+// }
+
 .contact-btn__btn {
-  color: $primary-text-color;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font(14px, 600, null, 1.29);
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -155,9 +208,11 @@
     border: 2px solid $button-background-color;
 
     &:hover {
+      background-color: transparent;
       border-color: $button-border-hover;
     }
     &:focus {
+      background-color: transparent;
       border-color: $button-border-hover;
       color: $tablet-header-description-color;
     }
@@ -166,5 +221,5 @@
 
 .contact-btn__icon {
   margin-left: 4px;
-  vertical-align: baseline;
+  fill: currentColor;
 }

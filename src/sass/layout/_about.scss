@@ -16,31 +16,46 @@ background-repeat: no-repeat;
     // padding-top: 125px;
     // margin-bottom: 15px;
     @include font($fs18, $fw700, 0, 37.2px);
+    margin-top: 61px;
   }
     &__img {
       position: absolute;
-// display: block;
 margin: 0;
-width: 100%;
+width: auto;
 height: auto;
-position: inherit;
+top: 2400px;
 z-index: 1;
 border-radius: 50%;
-box-shadow:  rgba(248, 210, 78, 0.7) 0px -25px 0px 0px;
+box-shadow:  rgba(248, 210, 78, 0.7) 0%, 0px -25px 0px 0px;
 
 }
     &__main-title {
-    @include font($fs20, $fw500, 0, 37.2px);
+    @include font($fs30, $fw400, 0, 37.2px);
     line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
-    // color: getColor('button-color');
     margin: auto;
     margin-bottom: 26px;
+    font-family: $seymour-fonts;
+    color: $secondary-background-color;
 }
+    &__picture {
+      display: flex;
+      justify-content: center;
+    }
+
     &__description {
         color: $secondary-background-color;
+        margin-top: 372px;
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+    &__description--text {
+      @include font ($fs12, $fw400, )
+    }
+
+  
     &__button {
     width: 176px;
     height: 44px;

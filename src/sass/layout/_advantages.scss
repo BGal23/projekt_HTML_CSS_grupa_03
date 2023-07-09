@@ -1,14 +1,18 @@
 .advantages {
+    position: relative;
+    display: block;
     color: $secondary-background-color;
     background-color: $primary-background-color;
-    // font-family: $montserrat-fonts, $seymour-fonts;
+    font-family: $montserrat-fonts, $seymour-fonts;
     padding-top: 50px;
     padding-bottom: 68px;
-    display: block;
 
-    &__list {
-        display: flex;
-        align-items: center;
+    @include tablet {
+        padding-bottom: 204px;
+    }
+
+    @include desktop {
+        padding-bottom: 178px;
     }
 
     &__title {
@@ -19,10 +23,13 @@
     &__list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 28px;
+        margin: 0 auto;
 
         @include tablet {
-            gap: 32px;
+            flex-direction: row;
+            gap: 80px;
         }
 
         @include desktop {
@@ -32,13 +39,13 @@
     }
 
     &__icon {
+        display: inline-flex;
         background-color: $button-background-color;
         fill: $primary-text-color;
         height: 50px;
         width: 50px;
         border-radius: 50%;
         padding: 7px;
-        display: inline-flex;
     }
 
     &__item {
@@ -50,19 +57,52 @@
         font-weight: bold;
         margin-top: 22px;
         margin-bottom: 16px;
+        letter-spacing: 4%;
+
+        @include tablet {
+            font-size: 48px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        @include desktop {
+            font-size: 58px;
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
     }
 
     &__text {
         font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 0%;
+
+        @include tablet {
+            font-size: 14px;
+            line-height: 174%;
+            letter-spacing: 0%;
+        }
+
+        @include desktop {
+            font-size: 16px;
+            line-height: 176%;
+            letter-spacing: 2%;
+        }
     }
 
     & figure {
         max-width: 230px;
+        height: 166px;
         margin: 0;
 
+        @include tablet {
+            max-width: 152px;
+            height: 241px;
+        }
+
         @include desktop {
-            max-width: 225px;
-            height: 368px;
+            max-width: 368px;
+            height: 225px;
         }
     }
 }

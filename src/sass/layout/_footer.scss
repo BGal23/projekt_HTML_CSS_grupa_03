@@ -25,8 +25,7 @@
   }
 
   &__slogan {
-    font-family: $montserrat-fonts;
-    @include font($fs18, $fw700, 0, normal);
+    @include font($fs18, $fw700, 0, 1.11);
     color: $secondary-background-color;
 
     @include tablet {
@@ -127,6 +126,7 @@
 
     @include desktop {
       @include font($fs12, $fw700, 0.24px, 186%);
+      display: inline;
     }
   }
 }

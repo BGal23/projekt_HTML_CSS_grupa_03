@@ -1,18 +1,15 @@
 .advantages {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     color: $secondary-background-color;
     background-color: $primary-background-color;
     font-family: $montserrat-fonts, $seymour-fonts;
     padding-top: 50px;
-    padding-bottom: 68px;
-
-    @include tablet {
-        padding-bottom: 204px;
-    }
+    margin-bottom: -20px;
 
     @include desktop {
-        padding-bottom: 178px;
+        margin-bottom: 20px;
     }
 
     &__title {

@@ -1,0 +1,89 @@
+.read-more-modal {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
+
+  &__window {
+    width: 100%;
+    background-color: $secondary-background-color;
+    padding: 28px;
+    border: 2px solid $button-background-color;
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+
+    @include mobile_2 {
+      width: 480px;
+      margin: auto;
+    }
+
+    @include tablet {
+      width: 568px;
+      padding: 32px 60px;
+    }
+  }
+
+  &__button-close {
+    background-color: transparent;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    outline: none;
+  }
+
+  &__cross-icon {
+    width: 20px;
+    height: 20px;
+    fill: $primary-text-color;
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $primary-text-color;
+    text-align: center;
+    font-family: $seymour-fonts;
+    @include font($fs16, $fw400, 0, 1.5);
+
+    @include tablet {
+      @include font($fs20, $fw400, 0, 1.4);
+      margin-bottom: 32px;
+    }
+  }
+
+  &__video-window {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    color: $primary-text-color;
+    @include font($fs14, $fw400, 0, 1.4);
+
+    @include tablet {
+      @include font($fs16, $fw400, 0, 1.4);
+    }
+  }
+
+  &--hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

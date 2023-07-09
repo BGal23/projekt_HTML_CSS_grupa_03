@@ -1,0 +1,68 @@
+.advantages {
+    color: $secondary-background-color;
+    background-color: $primary-background-color;
+    // font-family: $montserrat-fonts, $seymour-fonts;
+    padding-top: 50px;
+    padding-bottom: 68px;
+    display: block;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        opacity: 0;
+        font-size: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        @include tablet {
+            gap: 32px;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+
+    &__icon {
+        background-color: $button-background-color;
+        fill: $primary-text-color;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 7px;
+        display: inline-flex;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__number {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 22px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    & figure {
+        max-width: 230px;
+        margin: 0;
+
+        @include desktop {
+            max-width: 225px;
+            height: 368px;
+        }
+    }
+}

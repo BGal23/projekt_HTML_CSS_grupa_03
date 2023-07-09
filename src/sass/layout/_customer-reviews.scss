@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin: 150px 0 250px;
+    margin: 150px 0 450px;
     @include tablet {
         margin: 175px 0 250px;
         }
@@ -55,7 +55,11 @@
 }
 
 .swiper-pagination {
-    padding-bottom: 200px;
+    padding-bottom: 410px;
+    @include tablet {
+        margin: 0 0 -220px;
+        }
+    
     &-bullet {
         width: 12px;
         height: 12px;

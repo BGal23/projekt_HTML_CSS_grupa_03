@@ -78,8 +78,8 @@
         </li>
       </ul>
       <form class="modal-products__form" id="myForm">
-        <input name="Name" placeholder="Name" id="nameInput" />
-        <input name="phone" placeholder="Phone" id="phoneInput" />
+        <input name="Name" placeholder="Name" id="nameInput" minlength="4" required />
+        <input name="phone" placeholder="Phone" id="phoneInput" pattern="[0-9]{9}" required />
         <textarea placeholder="Comment"></textarea>
         <button type="submit" class="modal-products__button" id="submitButton" disabled>
           Submit

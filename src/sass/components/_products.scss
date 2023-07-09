@@ -94,7 +94,7 @@
 
     &__ice {
         position: relative;
-        top: -90px;
+        bottom: 80px;
         background-color: $first-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -116,14 +116,14 @@
             height: 536px;
             max-width: 370px;
             position: relative;
-            top: -140px;
+            top: -130px;
         }
 
     }
 
     &__coffee {
         position: relative;
-        top: -90px;
+        bottom: 80px;
         background-color: $second-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -144,14 +144,14 @@
             height: 536px;
             max-width: 370px;
             position: relative;
-            top: -140px;
+            top: -130px;
         }
 
     }
 
     &__milkshake {
         position: relative;
-        top: -90px;
+        bottom: 80px;
         background-color: $third-product-card-color;
         max-width: 320px;
         height: 428px;
@@ -169,7 +169,7 @@
 
         @include desktop {
             position: relative;
-            top: -140px;
+            top: -130px;
             padding-inline: 64px;
             height: 536px;
             max-width: 370px;
@@ -253,8 +253,44 @@
         display: block;
         position: relative;
         border-radius: 50%;
-        z-index: 1;     
+        z-index: 2;   
     }
 
+}
+.products__picture-overlay {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        border-radius: 50%;
+        padding-bottom: 80%;
+        position: absolute;
+        top: 11px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include tablet{
+            top: 12px;
+        }
+        @include desktop{
+            top: 16px;
+        }
+    }
+}
+.products__picture-overlay__one::before {
+    background-color: $first-product-shadow-color;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.products__picture-overlay__two::before {
+    background-color: $second-product-shadow-color;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.products__picture-overlay__three::before {
+    background-color: $third-product-shadow-color;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
 }
 //$first-product-shadow-color; $second-product-shadow-color;$third-product-shadow-color; 

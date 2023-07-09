@@ -13,77 +13,141 @@ background-repeat: no-repeat;
     font-family: $montserrat-fonts;
     @include font($fs18, $fw700, 0, 37.2px);
     margin-top: 61px;
+
+    @include desktop {
+      @include font($fs30, $fw800, 1.2, 0)
+    }
   }
     &__img {
 position: absolute;
-margin: 20px 0 0 0;
-left: 20px;
+margin: 24px 0 0 0;
+left: 7%; 
 width: auto;
 height: auto;
-
 z-index: 1;
 border-radius: 50%;
-box-shadow:  rgba(248, 210, 78, 0.7) 100%, 0px -25px 0px 0px;
+box-shadow: rgba(248, 210, 78, 0.9) 0px -25px 0px 0px;
 
+@include mobile_2 {
+left: 20%;
+}
+@include tablet {
+  // display: none;
+  max-width: 330px;
+  height: auto;
+  left: 32px;
+  margin: 80px 0 0 0;
+}
+@include desktop {
+left: 17px;
+max-width: 490px;
+box-shadow: rgba(248, 210, 78, 0.9) 0px -30px 0px 0px;
+
+}
 }
     &__main-title {
     @include font($fs30, $fw400, 0, 37.2px);
     line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+        margin: auto;
     margin-bottom: 26px;
     font-family: $seymour-fonts;
     color: $secondary-background-color;
+    @include tablet {
+      width: auto;
+    margin-bottom: 0;
+    }
+    @include desktop {
+      @include font($fs36, $fw400, 2.16, 0);
+      margin: 50px 0 0 0;
+    }
+
 }
     &__picture {
       display: flex;
-      justify-content: center;
     }
-
     &__description {
         color: $secondary-background-color;
-      top: 340px;
+        margin: auto;
+        top: 340px;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
+        justify-content: center;
         max-width: 220px;
-    }
+        @include tablet {
+          max-width: 334px;
+        margin: 75px 0 32px 365px;
+          }
+          @include desktop {
+            max-width: 463px;
+            margin: 135px 0 0 616px;
+            ;
+          }
+      }
+    
     &__description--text {
       font-family: $montserrat-fonts;
       justify-content: center;
       text-align: center;
-      @include font ($fs12, $fw400, 0, 162%)
+      @include font ($fs12, $fw400, 0, 162%);
+      @include tablet {
+        @include font ($fs12, $fw400, 0.48, 194%);
+        text-align: left;
+      }
+      @include desktop {
+        @include font ($fs16, $fw400, 0.56, 194%)
+      }
         }
 
 &__description--text:first-child {
   margin:  340px 0 7px 0;
-  @include font ($fs12, $fw400, 0.48, 176%)
+  @include font ($fs12, $fw400, 0.48, 176%);
+  @include tablet {
+    margin: 0 0 7px 0;
+    @include font ($fs12, $fw400, 0.48, 176%);
+  }
+  @include desktop{
+    @include font ($fs16, $fw400, 0.64, 176%)
+}}
+&__description--text:nth-child(2) {
+margin-bottom: 5px;
+@include tablet {
+  @include font ($fs12, $fw400, 0.64, 176%)
 }
-&__description--text:last-child {
-  margin-top: 20px;
+@include desktop {
+  @include font ($fs14, $fw400, 0.56, 194%)
 }
-    &__button {
+}
+
+&__button {
     width: 164px;
     height: 42px;
     background-color: $button-background-color;
     color: $button-text-color;
     font-family: $montserrat-fonts;
-    border-radius: 15px;
+    border-radius: 11px;
     color: $button-text-color;
     border: none;
     font-style: normal;
     display: flex; 
     top: 50px;
     justify-content: center;
-    // text-align: center;
-    padding: 0;
-    margin: auto;
-    margin-top: 17px;
+    text-align: center;
+    padding: 12px 0 0 30px;
+    margin: 24px auto auto;
+    // margin-top: 17px;
     @include font($fs14, $fw600, 0, 1.28);
+    @include tablet {
+      margin: 36px auto auto 0;
+    }
   }
 &__icon {
-  inset: 0;
+  // inset: 0;
   fill: $button-text-color;
+margin: 3px auto auto 3px;
 }
 }

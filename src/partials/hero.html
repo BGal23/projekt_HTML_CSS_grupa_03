@@ -1,47 +1,66 @@
 <!-- hero -->
-<section id="hero" class="hero">
-  <div class="container hero__bg">
-    <div class="hero_title">
-      <h1 class="hero__title-text">ice cream made with passion</h1>
+<section id="hero" class="hero hero__bg">
+  <div class="container">
+    <div class="hero__title">
+      <h1 class="hero__title-text">
+        ice cream made with<span class="hero__title-text hero__title-text--big">passion</span>
+      </h1>
+    </div>
+    <!-- <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p> -->
+    <div>
       <ul class="hero__list">
-        <li class="hero__item btn-product btn-product__text"><a href="#our-products">Products</a></li>
+        <li class="hero__item btn-product btn-product__text">
+          <a href="#our-products">Products</a>
+        </li>
         <li class="hero__item">
           <a class="hero__link hero__link-text" href="#how-its-made">How it’s made?</a>
         </li>
       </ul>
     </div>
     <div class="hero__content">
-      <!-- <div class="hero_img-balls-active animate__animated animate__fadeInTopLeft"> -->
-      <!--   <img -->
-      <!--     class="hero__img-balls" -->
-      <!--     srcset=" -->
-      <!--       ./images/hero/hero-ice-balls-tablet-1x.png  152w, -->
-      <!--       ./images/hero/hero-ice-balls-tablet-2x.png  304w, -->
-      <!--       ./images/hero/hero-ice-balls-desktop-1x.png 225w, -->
-      <!--       ./images/hero/hero-ice-balls-desktop-2x.png 450w -->
-      <!--     " -->
-      <!--     sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw" -->
-      <!--     src="./images/hero/hero-ice-balls-tablet-1x.png" -->
-      <!--     alt="plate with ice-cream balls" -->
-      <!--   /> -->
-      <!-- </div> -->
-      <!-- <div class="hero__picture animate__animated animate__fadeInDownBig"> -->
-      <div class="hero__img-box">
+      <div>
         <img
-          class="hero__img-ice"
+          class="hero__img-ice-lots"
           srcset="
-            ./images/Mobile/hero-mobile-ice@1x.png   218w,
-            ./images/Mobile/hero-mobile-ice@2x.png   436w,
-            ./images/Tablet/hero-tablet-ice@1x.png   268w,
-            ./images/Tablet/hero-tablet-ice@2x.png   536w,
-            ./images/Desktop/hero-desktop-ice@1x.png 456w,
-            ./images/Desktop/hero-desktop-ice@2x.png 912w
+            ./images/Tablet/tablet-lots-of-icecream@1x.png   152w,
+            ./images/Tablet/tablet-lots-of-icecream@2x.png   304w,
+            ./images/Desktop/desktop-lots-of-icecream@1x.png 225w,
+            ./images/Desktop/desktop-lots-of-icecream@2x.png 450w
           "
-          sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, 100vw"
-          src=" ./images/Mobile/hero-mobile-ice@1x.png"
-          alt="three scoops of ice cream smiling"
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+          src="./images/Tablet/tablet-lots-of-icecream@1x.png"
+          alt="plate with ice-cream balls"
         />
       </div>
+      <a class="hero__content-link" href=""
+        ><p class="hero__content-text">
+          Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+          unforgettable experience!
+        </p>
+        <svg class="hero__arrow" width="40" height="16">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- </div> -->
+    <!-- <div class="hero__picture animate__animated animate__fadeInDownBig"> -->
+    <div class="hero__img-box">
+      <img
+        class="hero__img-ice"
+        srcset="
+          ./images/Mobile/hero-mobile-ice@1x.png      177w,
+          ./images/Mobile/hero-mobile-ice@2x.png      354w,
+          ./images/Mobile/hero-mobile-ice-x480@1x.png 218w,
+          ./images/Mobile/hero-mobile-ice-x480@2x.png 436w,
+          ./images/Tablet/hero-tablet-ice@1x.png      268w,
+          ./images/Tablet/hero-tablet-ice@2x.png      536w,
+          ./images/Desktop/hero-desktop-ice@1x.png    456w,
+          ./images/Desktop/hero-desktop-ice@2x.png    912w
+        "
+        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, 100vw"
+        src=" ./images/Mobile/hero-mobile-ice@1x.png"
+        alt="three scoops of ice cream smiling"
+      />
     </div>
   </div>
 </section>

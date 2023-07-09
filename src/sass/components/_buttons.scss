@@ -14,13 +14,8 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    color: $primary-text-color;
+    @include font(0.75rem, 600, none, 1.286);
   }
 }
 .button {

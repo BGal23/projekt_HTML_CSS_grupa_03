@@ -1,20 +1,19 @@
-/*  HERO
- *
- */
+/*  HERO */
 
-//wielkość
-$fs075: 0.75rem; /*  12px = 0.75rem  */
-$fs0875: 0.875rem; /*  14px = 0.875rem  */
-$fs1: 1rem; /*  16px = 1rem  */
-$fs1125: 1.125rem; /*  18px = 1.125rem  */
-$fs125: 1.25rem; /*  20px = 1.25rem  */
-$fs1375: 1.375rem; /*  22px = 1.375rem  */
-$fs1625: 1.625rem; /*  26px = 1.625rem  */
-$fs1875: 1.875rem; /*  30px = 1.875rem  */
-$fs2125: 2.125rem; /*  34px = 2.125rem  */
-$fs225: 2.25rem; /*  36px = 2.25rem  */
-$fs3: 3rem; /*  48px = 3rem  */
-$fs3625: 3.625; /*  58px = 3.625rem  */
+/*  Font size  
+ *  12px = 0.75rem
+ *  14px = 0.875rem
+ *  16px = 1rem
+ *  18px = 1.125rem
+ *  20px = 1.25rem
+ *  22px = 1.375rem
+ *  26px = 1.625rem
+ *  30px = 1.875rem
+ *  34px = 2.125rem
+ *  36px = 2.25rem
+ *  48px = 3rem
+ *  58px = 3.625rem
+ */
 
 // .container {
 //   width: 100%;
@@ -26,18 +25,36 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 .hero {
   height: 435px;
   overflow: hidden;
+  padding-top: 2.5em;
+
   & .container {
     height: 100%;
     position: relative;
     width: 100%;
-    // padding-left: 1.25em; /* 20px */
-    padding-right: 2.06em; /* 20px */
+    padding-right: 1.25em;
+    padding-left: 1.25em; /* 20px */
     z-index: 1;
-    // margin: 0 auto;
+    @include mobile_1 {
+      width: 320px;
+    }
+
+    @include mobile_2 {
+      width: 480px;
+    }
+
+    @include tablet {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @include desktop {
+      width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
   &__bg {
-    // width: 20rem;
-    // height: 31.375rem;
     flex-shrink: 0;
     background-color: $primary-background-color;
     background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
@@ -52,37 +69,34 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 
     @include mobile_2 {
       height: 349px;
-      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
-      // background-position: bottom right 0;
+      background-image: url(./../images/mobile/mobiledotted-wavebackgr-phon-1.svg);
       background-position: right 0 bottom;
     }
 
     @include tablet {
       height: 349px;
       padding-top: 14px;
-      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
+      background-image: url(./../images/tablet/mobiledotted-wavebackgr-tablet.svg);
       background-position: bottom;
     }
 
     @include desktop {
       height: 591px;
       padding-top: 45px;
-      background-image: url(../images/mobile/mobiledotted-wavebackgr-phon.svg);
+      background-image: url(./../images/desktop/mobiledotted-wavebackgr-desktop.svg);
       background-position: bottom;
     }
   }
   &__title {
     display: flex;
-    //width: 15.4375rem;
     height: 6.0625rem;
     flex-direction: column;
     flex-shrink: 0;
-    margin-top: 2.5em;
 
-  @include tablet {
-    margin-top: 0;
+    @include tablet {
+      margin-top: 0;
+    }
   }
-}
   &__title-text {
     color: #fcfcfc;
     font-family: Seymour One;
@@ -91,15 +105,13 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     @include font(1.625rem, 400, 0.065rem, normal);
 
     @include mobile_2 {
-        // @include font(2.125rem, 400, 0, 0.965);
-        max-width: 247px;
-      }
-    
-      @include desktop {
-        // @include font(2.125rem, 400, 0, 0.965);
-        max-width: 367px;
-        font-size: 2.375em;
-      }
+      max-width: 247px;
+    }
+
+    @include desktop {
+      max-width: 367px;
+      font-size: 2.375em;
+    }
   }
   &__title-text--big {
     display: block;
@@ -122,38 +134,81 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
   }
   &__item {
     margin: 0;
-    // padding: 0;
-    // display: inline-block;
   }
   &__link {
     display: flex;
-    // width: 6.25rem;
-    // height: 1.5rem;
     flex-direction: column;
     flex-shrink: 0;
   }
-  //&__link:hover {
-  //}
   &__link-text {
     color: $button-background-color;
     text-align: center;
     font-family: Montserrat;
-    // font-size: 0.75rem;
-    // font-style: SemiBold;
-    // font-weight: 600;
-    // line-height: normal;
     text-decoration-line: underline;
     @include font(0.75rem, 600, 0, normal);
   }
+  &__ctu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3125em;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__ctu-item {
+    color: #131313;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  &__ctu-item--cafes::after {
+    content: "cafes";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+
+    color: #fcfcfc;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform:lowercase; 
+  }
+
+&__ctu-item--food-trucks::after {
+    content: "food trucks";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+
+    color: #fcfcfc;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform:lowercase;
+  }
+  
   &__img-box {
     position: absolute;
     bottom: 0;
     width: 177px;
     right: 20%;
-
-    @include mobile_1 {
-      right: 15%;
-    }
 
     @include mobile_2 {
       width: 218px;
@@ -171,88 +226,86 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
       right: 7%;
     }
   }
-    &__content {
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
-  
-      // @include flex-align;
-      display: flex;
-      align-items: center;
+  &__content {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      display: none;
     }
-  
-    &__content-link {
-  
-      &:hover .hero__arrow,
-      &:focus .hero__arrow {
-        fill: $button-background-color;
-  
-        animation: pulse 1s infinite;
-        @include animation(animation-timing-function);
-  
-        @keyframes pulse {
-          0% {
-            transform: scale(1);
-          }
-  
-          50% {
-            transform: scale(1.1);
-          }
-  
-          100% {
-            transform: scale(1);
-          }
-        }
-      }
-  
-      @include tablet {
-        margin-left: 2em;
-      }
-    }
-  
-    &__content-text {
-      @include tablet {
-        color: #fff;
-        font-family: DM Sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        max-width: 15em;
-        margin-bottom: 1em;
-      }
-    }
-  
-    &__img-ice-lots {
-      animation: circle 9000ms infinite 1000ms alternate-reverse;
+  }
+
+  &__content-link {
+    &:hover .hero__arrow,
+    &:focus .hero__arrow {
+      fill: $button-background-color;
+
+      animation: pulse 1s infinite;
       @include animation(animation-timing-function);
-  
-      @keyframes circle {
+
+      @keyframes pulse {
         0% {
-          transform: rotate(0deg);
+          transform: scale(1);
         }
-  
+
+        50% {
+          transform: scale(1.1);
+        }
+
         100% {
-          transform: rotate(360deg);
+          transform: scale(1);
         }
       }
-  
-      &:hover {
-        animation-play-state: paused;
+    }
+
+    @include tablet {
+      margin-left: 2em;
+    }
+  }
+
+  &__content-text {
+    @include tablet {
+      color: #fff;
+      font-family: DM Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      max-width: 15em;
+      margin-bottom: 1em;
+    }
+  }
+
+  &__img-ice-lots {
+    animation: circle 9000ms infinite 1000ms alternate-reverse;
+    @include animation(animation-timing-function);
+
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
       }
     }
-  
-    &__arrow {
-      fill: $secondary-background-color;
-      @include animation(fill);
+
+    &:hover {
+      animation-play-state: paused;
     }
-  
-    &__img-ice {
-      transform: translateY(5px);
-      @include animation(transform);
-  
-      &:hover {
-        transform: translateY(0px);
-      }
+  }
+
+  &__arrow {
+    fill: $secondary-background-color;
+    @include animation(fill);
+  }
+
+  &__img-ice {
+    transform: translateY(5px);
+    @include animation(transform);
+
+    &:hover {
+      transform: translateY(0px);
     }
+  }
 }

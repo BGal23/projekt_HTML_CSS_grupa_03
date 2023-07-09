@@ -24,7 +24,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 // }
 
 .hero {
-  height: 430px;
+  height: 435px;
   overflow: hidden;
   & .container {
     height: 100%;
@@ -73,18 +73,33 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
   }
   &__title {
     display: flex;
-    width: 15.4375rem;
+    //width: 15.4375rem;
     height: 6.0625rem;
     flex-direction: column;
     flex-shrink: 0;
     margin-top: 2.5em;
+
+  @include tablet {
+    margin-top: 0;
   }
+}
   &__title-text {
     color: #fcfcfc;
     font-family: Seymour One;
     font-style: normal;
     text-transform: uppercase;
     @include font(1.625rem, 400, 0.065rem, normal);
+
+    @include mobile_2 {
+        // @include font(2.125rem, 400, 0, 0.965);
+        max-width: 247px;
+      }
+    
+      @include desktop {
+        // @include font(2.125rem, 400, 0, 0.965);
+        max-width: 367px;
+        font-size: 2.375em;
+      }
   }
   &__title-text--big {
     display: block;
@@ -95,6 +110,15 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
     align-items: baseline;
     gap: 0.75em;
     margin-top: 2em;
+
+    @include tablet {
+      margin-top: 1.5em;
+      margin-bottom: 0.75em;
+    }
+    @include desktop {
+      margin-top: 3.75em;
+      margin-bottom: 3.625em;
+    }
   }
   &__item {
     margin: 0;
@@ -139,7 +163,7 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
 
     @include tablet {
       width: 268px;
-      right: 12%;
+      right: 8%;
     }
 
     @include desktop {
@@ -147,7 +171,88 @@ $fs3625: 3.625; /*  58px = 3.625rem  */
       right: 7%;
     }
   }
-  //&__img-ice {
-    // margin: 0 20%;
-  //}
+    &__content {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+  
+      // @include flex-align;
+      display: flex;
+      align-items: center;
+    }
+  
+    &__content-link {
+  
+      &:hover .hero__arrow,
+      &:focus .hero__arrow {
+        fill: $button-background-color;
+  
+        animation: pulse 1s infinite;
+        @include animation(animation-timing-function);
+  
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+  
+          50% {
+            transform: scale(1.1);
+          }
+  
+          100% {
+            transform: scale(1);
+          }
+        }
+      }
+  
+      @include tablet {
+        margin-left: 2em;
+      }
+    }
+  
+    &__content-text {
+      @include tablet {
+        color: #fff;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 15em;
+        margin-bottom: 1em;
+      }
+    }
+  
+    &__img-ice-lots {
+      animation: circle 9000ms infinite 1000ms alternate-reverse;
+      @include animation(animation-timing-function);
+  
+      @keyframes circle {
+        0% {
+          transform: rotate(0deg);
+        }
+  
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+  
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  
+    &__arrow {
+      fill: $secondary-background-color;
+      @include animation(fill);
+    }
+  
+    &__img-ice {
+      transform: translateY(5px);
+      @include animation(transform);
+  
+      &:hover {
+        transform: translateY(0px);
+      }
+    }
 }

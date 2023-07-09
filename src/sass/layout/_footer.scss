@@ -2,8 +2,6 @@
   background-color: $primary-background-color;
 
   &__main-wrapper {
-    padding-inline: 20px;
-
     @include tablet {
       display: flex;
       justify-content: space-between;
@@ -83,25 +81,41 @@
 
   &__cta-phone {
     font-family: $montserrat-fonts;
-    @include font($fs12, $fw700, 0, 186%);
+    @include font($fs12, $fw700, 0, 1.86);
     color: $primary-text-color;
 
     @include tablet {
-      @include font($fs14, $fw700, 0, 186%);
+      @include font($fs14, $fw700, 0, 1.86);
     }
 
     @include desktop {
-      @include font($fs16, $fw700, 0.32px, 186%);
+      @include font($fs16, $fw700, 0.32px, 1.86);
     }
   }
 
   &__phone-no-link {
     font-family: $montserrat-fonts;
-    @include font($fs12, $fw700, 0, 186%);
+    @include font($fs12, $fw700, 0, 1.86);
     color: $secondary-background-color;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
 
     @include tablet {
-      @include font($fs14, $fw700, 0, 186%);
+      @include font($fs14, $fw700, 0, 1.86);
+    }
+
+    @include desktop {
+      @include font($fs16, $fw700, 0.32px, 1.86);
+    }
+
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &:hover {
+      @include desktop {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -118,15 +132,15 @@
   &__copyrights-text {
     color: $all-rights-text-color;
     font-family: $montserrat-fonts;
-    @include font($fs14, $fw700, 0, 152%);
+    @include font($fs14, $fw700, 0, 1.52);
 
     @include tablet {
-      @include font($fs14, $fw700, 0.28px, 186%);
+      @include font($fs14, $fw700, 0.28px, 1.52);
+      display: inline;
     }
 
     @include desktop {
-      @include font($fs12, $fw700, 0.24px, 186%);
-      display: inline;
+      @include font($fs12, $fw700, 0.24px, 1.86);
     }
   }
 }

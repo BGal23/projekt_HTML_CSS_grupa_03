@@ -74,6 +74,10 @@
     }
   }
 
+  &__video {
+    border: none;
+  }
+
   &__text {
     color: $primary-text-color;
     @include font($fs14, $fw400, 0, 1.4);

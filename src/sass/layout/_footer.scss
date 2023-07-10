@@ -1,5 +1,26 @@
 .pg-footer {
   background-color: $primary-background-color;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 82px;
+    height: 1px;
+    width: 100%;
+    background-color: $horizontal-line-color;
+
+    @include tablet {
+      bottom: 50px;
+    }
+
+    @include desktop {
+      bottom: 44px;
+      width: 1168px;
+      left: calc((100vw - 1168px) / 2);
+    }
+  }
 
   &__main-wrapper {
     @include tablet {
@@ -122,7 +143,6 @@
   &__copyrights-wrapper {
     padding-block: 20px;
     text-align: center;
-    border-top: 1px solid $horizontal-line-color;
 
     @include tablet {
       padding-block: 12px;

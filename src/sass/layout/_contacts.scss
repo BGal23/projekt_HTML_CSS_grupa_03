@@ -35,12 +35,20 @@
   background-color: $secondary-background-color;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
     min-width: 224px;
     max-width: 368px;
     height: 537px;
     padding: 40px 24px;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-1%);
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    }
   }
 
   @include desktop {

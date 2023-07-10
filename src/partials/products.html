@@ -2,142 +2,148 @@
   <div class="container">
     <p class="products__main-text">100% natural</p>
     <h2 class="products__main-title">Products</h2>
-    <div class="products__flex">
-      <figure class="products__space">
-        <div class="products__picture-overlay products__picture-overlay__one">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/desktop/desktop-icecream@1x.jpg 1x,
-                ./images/desktop/desktop-icecream@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/tablet/tablet-icecream@1x.jpg 1x,
-                ./images/tablet/tablet-icecream@2x.jpg 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/mobile/mobile-icecreams@1x.jpg 1x,
-                ./images/mobile/mobile-icecreams@2x.jpg 2x
-              "
-            />
-            <img
-              src="./images/mobile/mobile-icecreams@1x.jpg"
-              alt="lody"
-              class="products__img"
-              type="jpg"
-            />
-          </picture>
-        </div>
-        <figcaption class="products__ice">
-          <p class="products__title">ice cream</p>
-          <p class="products__text">
-            Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
-            stabilizer
-          </p>
-          <button class="products__icons openModal" type="button">
-            <svg width="40px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-        </figcaption>
-      </figure>
-      <figure class="products__space">
-        <div class="products__picture-overlay products__picture-overlay__two">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/desktop/desktop-coffee@1x.jpg 1x,
-                ./images/desktop/desktop-coffee@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/tablet/tablet-coffee@1x.jpg 1x,
-                ./images/tablet/tablet-coffee@2x.jpg 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/mobile/mobile-coffee@1x.jpg 1x,
-                ./images/mobile/mobile-coffee@2x.jpg 2x
-              "
-            />
-            <img
-              src="./images/mobile/mobile-coffee@1x.jpg"
-              alt="coffee"
-              class="products__img"
-              type="jpg"
-            />
-          </picture>
-        </div>
-        <figcaption class="products__coffee">
-          <p class="products__title">ice coffee</p>
-          <p class="products__text">
-            Fragrant invigorating drink created from 100% natural ingredients without the use of
-            preservatives and flavor enhancers
-          </p>
-          <button class="products__icons openModal" type="button" data-modal-open>
-            <svg width="40px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-        </figcaption>
-      </figure>
-      <figure class="products__space">
-        <div class="products__picture-overlay products__picture-overlay__three">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/desktop/desktop-milkshakes@1x.jpg 1x,
-                ./images/desktop/desktop-milkshakes@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/tablet/tablet-milkshakes@1x.jpg 1x,
-                ./images/tablet/tablet-milkshakes@2x.jpg 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/mobile/mobile-milkshake@1x.jpg 1x,
-                ./images/mobile/mobile-milkshake@2x.jpg 2x
-              "
-            />
-            <img
-              src="./images/mobile/mobile-milkshake@1x.jpg"
-              alt="milkshake"
-              class="products__img"
-              type="jpg"
-            />
-          </picture>
-        </div>
-        <figcaption class="products__milkshake">
-          <p class="products__title">milkshakes</p>
-          <p class="products__text">
-            Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and
-            other sweets of your choice
-          </p>
-          <button class="products__icons openModal" type="button" data-modal-open>
-            <svg width="40px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-        </figcaption>
-      </figure>
-    </div>
+    <ul class="products__flex">
+      <li>
+        <figure class="products__space">
+          <div class="products__picture-overlay products__picture-overlay__one">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/desktop/desktop-icecream@1x.jpg 1x,
+                  ./images/desktop/desktop-icecream@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/tablet/tablet-icecream@1x.jpg 1x,
+                  ./images/tablet/tablet-icecream@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/mobile/mobile-icecreams@1x.jpg 1x,
+                  ./images/mobile/mobile-icecreams@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/mobile/mobile-icecreams@1x.jpg"
+                alt="lody"
+                class="products__img"
+                type="jpg"
+              />
+            </picture>
+          </div>
+          <figcaption class="products__ice">
+            <p class="products__title">ice cream</p>
+            <p class="products__text">
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+              stabilizer
+            </p>
+            <button class="products__icons openModal" type="button">
+              <svg width="40px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="products__space">
+          <div class="products__picture-overlay products__picture-overlay__two">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/desktop/desktop-coffee@1x.jpg 1x,
+                  ./images/desktop/desktop-coffee@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/tablet/tablet-coffee@1x.jpg 1x,
+                  ./images/tablet/tablet-coffee@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/mobile/mobile-coffee@1x.jpg 1x,
+                  ./images/mobile/mobile-coffee@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/mobile/mobile-coffee@1x.jpg"
+                alt="coffee"
+                class="products__img"
+                type="jpg"
+              />
+            </picture>
+          </div>
+          <figcaption class="products__coffee">
+            <p class="products__title">ice coffee</p>
+            <p class="products__text">
+              Fragrant invigorating drink created from 100% natural ingredients without the use of
+              preservatives and flavor enhancers
+            </p>
+            <button class="products__icons openModal" type="button" data-modal-open>
+              <svg width="40px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="products__space">
+          <div class="products__picture-overlay products__picture-overlay__three">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/desktop/desktop-milkshakes@1x.jpg 1x,
+                  ./images/desktop/desktop-milkshakes@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/tablet/tablet-milkshakes@1x.jpg 1x,
+                  ./images/tablet/tablet-milkshakes@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/mobile/mobile-milkshake@1x.jpg 1x,
+                  ./images/mobile/mobile-milkshake@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/mobile/mobile-milkshake@1x.jpg"
+                alt="milkshake"
+                class="products__img"
+                type="jpg"
+              />
+            </picture>
+          </div>
+          <figcaption class="products__milkshake">
+            <p class="products__title">milkshakes</p>
+            <p class="products__text">
+              Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
+              and other sweets of your choice
+            </p>
+            <button class="products__icons openModal" type="button" data-modal-open>
+              <svg width="40px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </div>
 </section>

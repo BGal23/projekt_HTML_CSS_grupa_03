@@ -41,7 +41,7 @@
   @include tablet {
     min-width: 224px;
     max-width: 368px;
-    height: 537px;
+    // height: 537px;
     padding: 40px 24px;
 
     &:hover,
@@ -53,7 +53,7 @@
 
   @include desktop {
     max-width: 368px;
-    height: 542px;
+    // height: 542px;
     padding: 40px;
   }
 }

@@ -71,6 +71,9 @@
       height: 349px;
       background-image: url(./../images/mobile/mobiledotted-wavebackgr-phon-1.svg);
       background-position: right 0 bottom;
+      background-repeat: no-repeat;
+      background-origin: padding-box;
+      background-position-x: right  calc(((100vw - 480px)  - 1.5em)/ 2);
     }
 
     @include tablet {
@@ -140,12 +143,22 @@
     flex-direction: column;
     flex-shrink: 0;
   }
+  &__link:hover {
+    color: $button-border-hover;
+  }
+
   &__link-text {
     color: $button-background-color;
     text-align: center;
     font-family: Montserrat;
     text-decoration-line: underline;
     @include font(0.75rem, 600, 0, normal);
+  }
+  &__ctu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: inherit;
   }
   &__ctu-list {
     display: flex;
@@ -159,51 +172,76 @@
     color: #131313;
     text-align: right;
     font-family: Montserrat;
-    font-size: 46px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 1.84px;
+    letter-spacing: 1.12px;
     text-transform: uppercase;
     position: relative;
+
+    @include desktop {
+      font-size: 46px;
+      letter-spacing: 1.84px;
+    }
   }
-  
+
   &__ctu-item--cafes::after {
-    content: "cafes";
+    content: 'cafes';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 0px;
-
-    color: #fcfcfc;
-    text-align: right;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform:lowercase; 
+    @include tablet {
+      color: #fcfcfc;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    @include desktop {
+      color: #fcfcfc;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: lowercase;
+    }
   }
 
-&__ctu-item--food-trucks::after {
-    content: "food trucks";
+  &__ctu-item--food-trucks::after {
+    content: 'food trucks';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 0px;
-
-    color: #fcfcfc;
-    text-align: right;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform:lowercase;
+    @include tablet {
+      color: #fcfcfc;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    @include desktop {
+      color: #fcfcfc;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: lowercase;
+    }
   }
-  
+
   &__img-box {
     position: absolute;
     bottom: 0;

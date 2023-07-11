@@ -1,3 +1,8 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
 /*  HERO */
 
 /*  Font size  
@@ -15,12 +20,6 @@
  *  58px = 3.625rem
  */
 
-// .container {
-//   width: 100%;
-//   padding-left: 1.25em; /* 20px */
-//   padding-right: 1.25em; /* 20px */
-//   margin: 0 auto;
-// }
 
 .hero {
   height: 435px;
@@ -61,11 +60,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
 
-    // @include mobile_1 {
-    //   height: 349px;
-    //   background-image: url(../images/hero-dots-mobile.svg);
-    //   background-position: bottom right 10%;
-    // }
 
     @include mobile_2 {
       height: 349px;
@@ -73,7 +67,7 @@
       background-position: right 0 bottom;
       background-repeat: no-repeat;
       background-origin: padding-box;
-      background-position-x: right  calc(((100vw - 480px)  - 1.5em)/ 2);
+      background-position-x: right calc(((100vw - 480px) - 1.5em) / 2);
     }
 
     @include tablet {
@@ -184,6 +178,10 @@
       font-size: 46px;
       letter-spacing: 1.84px;
     }
+
+    &::before {
+      content: counter(num);
+    }
   }
 
   &__ctu-item--cafes::after {
@@ -193,24 +191,14 @@
     left: 0;
     right: 0;
     height: 0px;
-    @include tablet {
-      color: #fcfcfc;
-      text-align: right;
-      font-family: Montserrat;
-      font-size: 8px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
+    color: #fcfcfc;
+    text-align: right;
+    font-family: Montserrat;
+    text-transform: lowercase;
+
+    @include font(8px, 400, normal, normal);
     @include desktop {
-      color: #fcfcfc;
-      text-align: right;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: lowercase;
+      @include font(14px, 400, normal, normal);
     }
   }
 
@@ -221,27 +209,49 @@
     left: 0;
     right: 0;
     height: 0px;
-    @include tablet {
-      color: #fcfcfc;
-      text-align: right;
-      font-family: Montserrat;
-      font-size: 8px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
+
+    color: #fcfcfc;
+    text-align: right;
+    font-family: Montserrat;
+    text-transform: lowercase;
+
+    line-height: normal;
+    @include font(8px, 400, normal, normal);
     @include desktop {
-      color: #fcfcfc;
-      text-align: right;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: lowercase;
+      @include font(14px, 400, 1.2, normal);
+    }
+  }
+  &__counter-cafes {
+    animation: countercafes 3s ease-in-out forwards;
+    counter-reset: num var(--num);
+
+    @keyframes countercafes {
+      0% {
+        opacity: 0.05;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        --num: 16;
+      }
     }
   }
 
+  &__counter-trucks {
+    animation: countertrucks 3s ease-in-out forwards;
+    counter-reset: num var(--num);
+
+    @keyframes countertrucks {
+      0% {
+        opacity: 0.05;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        --num: 23;
+      }
+    }
+  }
   &__img-box {
     position: absolute;
     bottom: 0;
@@ -346,4 +356,18 @@
       transform: translateY(0px);
     }
   }
+}
+
+/* animate */
+
+.animate__animated.animate__fadeInDownBig {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInTopRight {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInTopLeft {
+  --animate-duration: 1.5s;
 }

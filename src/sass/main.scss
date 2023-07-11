@@ -5,27 +5,16 @@
 
 @import 'base/reset';
 
-@import 'abstracts/breakpoints';
 @import 'abstracts/colors';
 @import 'abstracts/fonts';
 @import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/variables';
 
 @import 'base/base';
-
-@import 'base/root';
 @import 'base/typography';
 
 @import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
-@import 'components/icons';
-@import 'components/logo';
 @import 'components/modal';
 @import 'components/navigation';
-@import 'components/newsletter';
-@import 'components/products';
 @import 'components/social-media';
 
 @import 'layout/about-modal';
@@ -43,14 +32,6 @@
 @import 'layout/products-modal';
 @import 'layout/products';
 @import 'layout/read-more-modal';
-
-@import 'pages/contact';
-@import 'pages/home';
-@import 'pages/how_its_made';
-@import 'pages/our_products';
-
-@import 'partials/button';
-@import 'partials/typography';
 
 @import 'utils/container';
 @import 'utils/is-hidden';

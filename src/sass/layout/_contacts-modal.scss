@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
   background-color: $secondary-background-color;
   width: 95%;
-  max-width: 280px;
+  // max-width: 280px;
   height: 95%;
   max-height: 365px;
   overflow: scroll;
@@ -53,10 +53,15 @@
       margin-bottom: 32px;
     }
   }
-
+  &__frame-window {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
   &__frame {
-    width: 224px;
-    height: 199px;
+    width: 100%;
+    // height: 199px;
     margin-bottom: 24px;
 
     @include tablet {

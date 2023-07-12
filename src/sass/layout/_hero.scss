@@ -118,7 +118,11 @@
     display: flex;
     align-items: baseline;
     gap: 0.75em;
-    margin-top: 2em;
+    margin-top: 3.5em;
+
+    @include mobile_2 {
+      margin-top: 2em;
+    }
 
     @include tablet {
       margin-top: 1.5em;
